@@ -6,8 +6,9 @@ public class Student {
 	private String name = "天山童姥";
 	
 	
-	public void setName(String n){
-		name = n;
+	//暴露出一个公共的方法去设置/获得
+	public void setName(String g){
+		name = g;
 	}
 	
 	public String getName(){
