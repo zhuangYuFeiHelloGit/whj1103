@@ -1,3 +1,7 @@
 //org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.debug.ui.presentation\tTorg.eclipse.jdt.ui.presentation
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.debug.ui.consoleFont
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
 eclipse.preferences.version=1
+org.eclipse.debug.ui.consoleFont=1|Monaco|36.0|0|COCOA|1|Monaco;
+org.eclipse.jface.textfont=1|Monaco|46.0|0|COCOA|1|Monaco;
