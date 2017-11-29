@@ -1,0 +1,7 @@
+package com.lanou3g.homework;
+
+public class HomeMain {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,13 @@
+package com.lanou3g.main;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		/*
+		 * String 类
+		 * 表示字符串
+		 * 注意，字符串不是基本数据类型
+		 */
+	}
+
+}

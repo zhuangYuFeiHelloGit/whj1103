@@ -1,0 +1,19 @@
+package test;
+
+public class Cat {
+private  String name;
+	private Dog dog = new Dog();
+	private int age;
+	
+	public void setName(String n){
+		
+		name = n;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	
+	
+}

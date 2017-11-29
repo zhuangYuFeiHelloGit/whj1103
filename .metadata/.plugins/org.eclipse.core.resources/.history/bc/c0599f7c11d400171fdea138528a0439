@@ -1,0 +1,11 @@
+package com.lanou3g.main;
+
+public class Teacher {
+	private String name;
+	private String gender;
+	
+	
+	
+	
+	
+}

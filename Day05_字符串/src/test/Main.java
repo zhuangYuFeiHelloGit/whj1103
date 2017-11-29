@@ -27,5 +27,13 @@ public class Main {
 		String result = s.sad();
 		//输出
 		System.out.println(result);
+		
+		Cat cat = new Cat();
+		cat.setName("李四");
+		
+		String a = cat.getName();
+		
+		
+		
 	}
 }

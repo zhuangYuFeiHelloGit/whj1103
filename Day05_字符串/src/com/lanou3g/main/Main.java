@@ -9,6 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Student stu = new Student();
+		Student s = new Student();
 		stu.smile();
 		//cry是private修饰的，
 		//所以在Student类外面找不到

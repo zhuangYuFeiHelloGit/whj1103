@@ -1,0 +1,10 @@
+package test;
+
+public class Cat {
+	private String name;
+	private Dog dog = new Dog();
+	private int age;
+	
+	
+	
+}
