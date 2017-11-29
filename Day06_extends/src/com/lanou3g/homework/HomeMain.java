@@ -11,6 +11,7 @@ public class HomeMain {
 		child.setName("毛新宇");
 		
 		
+		
 		father.setWife(mother);
 		father.setChild(child);
 		mother.setHusband(father);
