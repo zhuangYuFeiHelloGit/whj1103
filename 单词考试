@@ -12,3 +12,6 @@ source 源
 resource 资源
 generate 生成
 duplicate 重复
+extends 继承
+abstract 抽象的
+final 最终；不可变
