@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.lanou3g.extend.BigCar"/>
+<fullyQualifiedTypeName name="com.lanou3g.extend.MyThis"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.lanou3g.abs.Sunny"/>
+<fullyQualifiedTypeName name="com.lanou3g.abs.RainDay"/>
+<fullyQualifiedTypeName name="com.lanou3g.abs.Weather"/>
+<fullyQualifiedTypeName name="com.lanou3g.abs.Person"/>
 </qualifiedTypeNameHistroy>
