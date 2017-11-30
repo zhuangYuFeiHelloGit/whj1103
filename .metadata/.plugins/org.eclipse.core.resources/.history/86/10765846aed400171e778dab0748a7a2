@@ -1,0 +1,10 @@
+package com.lanou3g.study;
+
+public class Main {
+	public static void main(String[] args) {
+		Cat cat = new Cat();
+		
+		//这是在对象创建之后，设置name属性
+		cat.setName("Tom");	
+	}
+}

@@ -1,0 +1,10 @@
+package com.lanou3g.study.extend;
+
+public class Monkey extends Animal{
+
+	public Monkey() {
+		//super();
+		System.out.println("i am a 齐天大圣");
+	}
+	
+}

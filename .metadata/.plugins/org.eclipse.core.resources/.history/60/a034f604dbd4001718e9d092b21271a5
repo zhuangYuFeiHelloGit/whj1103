@@ -1,0 +1,10 @@
+package com.lanou3g.study.extend;
+
+public class Monkey extends Animal{
+
+	public Monkey() {
+		super();
+		
+	}
+	
+}

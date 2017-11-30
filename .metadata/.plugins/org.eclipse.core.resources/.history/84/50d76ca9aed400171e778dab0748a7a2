@@ -1,0 +1,22 @@
+package com.lanou3g.study;
+
+public class Main {
+	public static void main(String[] args) {
+		Cat cat = new Cat();
+		
+		Person zhangSan = new Person();
+		   
+		//这是在对象创建之后，设置name属性
+		cat.setName("Tom");	
+		//给cat对象，设置一个主人
+		cat.setOnwer(zhangSan);
+		/* 我们的要求是，每个猫对象被创建出来时
+		 * 都已经有了一个主人
+		 * 而set方法，是在对象被创建后，才可以调用
+		 * 执行的，这不符合我们的要求
+		 * 
+		 * java给我们提供了一个叫构造方法的东西
+		 * 可以帮助我们，在对象初始化时，给属性赋值
+		 */
+	}
+}

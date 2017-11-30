@@ -1,0 +1,5 @@
+package com.lanou3g.extend;
+
+public class BigCar extends Car {
+
+}

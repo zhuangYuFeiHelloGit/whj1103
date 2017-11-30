@@ -1,0 +1,28 @@
+package com.lanou3g.study;
+
+public class Cat {
+	private String name;
+	private Person onwer;
+	
+	public Cat(){
+		
+	}
+
+	public Person getOnwer() {
+		return onwer;
+	}
+
+	public void setOnwer(Person onwer) {
+		this.onwer = onwer;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+}

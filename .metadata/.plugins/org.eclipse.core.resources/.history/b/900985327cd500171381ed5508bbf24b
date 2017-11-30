@@ -1,0 +1,19 @@
+package com.lanou3g.extend;
+
+public class RunCar extends Car{
+	
+	//跑车的加速，应该比一般的快
+	//所以我们复写父类Car中的加速方法
+	//复写：就是把从父类中继承的方法修改
+	
+	@Override
+	public void speed(){
+		
+	}
+	
+	@Override
+	public void catchMouse(){
+		
+	}
+	
+}

@@ -1,0 +1,9 @@
+package com.lanou3g.abs;
+
+public abstract class Weather {
+	/*
+	 * abstract关键字：抽象的
+	 * 解释一下抽象：
+	 * 		没有具体的对象，就是抽象
+	 */
+}

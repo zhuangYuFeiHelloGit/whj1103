@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Animal.java&apos; to &apos;Day06_extends/src/com.lanou3g.study.extend&apos;&#x0A;- Original project: &apos;Day06_extends&apos;&#x0A;- Destination element: &apos;Day06_extends/src/com.lanou3g.study.extend&apos;&#x0A;- Original element: &apos;com.lanou3g.study.Animal.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.lanou3g.study.extend" element1="/src&lt;com.lanou3g.study{Animal.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1511941168215" units="1" version="1.0"/>
+</session>

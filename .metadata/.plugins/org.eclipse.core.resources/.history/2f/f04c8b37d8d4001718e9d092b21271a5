@@ -1,0 +1,7 @@
+package com.lanou3g.study.extend;
+
+import com.lanou3g.study.Animal;
+
+public class Pig extends Animal {
+	
+}

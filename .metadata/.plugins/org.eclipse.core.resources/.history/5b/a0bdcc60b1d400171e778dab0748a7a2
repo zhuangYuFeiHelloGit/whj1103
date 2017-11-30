@@ -1,0 +1,38 @@
+package com.lanou3g.study;
+
+public class Cat {
+	private String name;
+	private Person onwer;
+	
+	/*
+	 * 构造方法：
+	 * 		1，方法名与类名相同
+	 * 		2，没有返回值这一功能
+	 */
+	
+	
+	public Cat(Person onwer){
+		//将括号中的参数onwer的值
+		//赋值给了属性onwer
+		this.onwer = onwer;
+	}
+
+
+	public Person getOnwer() {
+		return onwer;
+	}
+
+	public void setOnwer(Person onwer) {
+		this.onwer = onwer;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+}

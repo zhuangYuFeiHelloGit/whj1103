@@ -1,0 +1,23 @@
+package com.lanou3g.extend;
+
+public class Main {
+
+	public static void main(String[] args) {
+//		BigCar big = new BigCar();
+//		BigCar b = new BigCar();
+//		big.setColor("黑色");
+//		big.showThis();
+//		System.out.println(big.getColor());
+		
+		MyThis myThis = new MyThis();
+		myThis.name = "张三";
+		
+		MyThis m = new MyThis();
+		m.name = "李四";
+		
+		myThis.myName();//方法里的this指的就是myThis
+		m.myName();//方法里的this指的就是m
+		
+	}
+
+}

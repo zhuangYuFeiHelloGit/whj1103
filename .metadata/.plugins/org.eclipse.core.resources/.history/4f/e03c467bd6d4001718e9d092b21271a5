@@ -1,0 +1,13 @@
+package com.lanou3g.study;
+
+public class Animal {
+	/*
+	 * 什么是继承？
+	 * 	Java面向对象编程的三大特性之一
+	 * 	封装，继承，多态
+	 * A 类 继承了 B 类
+	 * B 类是父类
+	 * A 类是子类
+	 */
+
+}
