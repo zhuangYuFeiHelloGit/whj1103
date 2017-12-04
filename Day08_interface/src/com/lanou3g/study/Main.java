@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		
+		
+		
 		//父类的引用，指向了子类的对象
 		//这是多态的一部分
 		Person person = new Teacher();

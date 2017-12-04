@@ -8,5 +8,20 @@
 <fullyQualifiedTypeName name="com.lanou3g.abs.Weather"/>
 <fullyQualifiedTypeName name="com.lanou3g.abs.Person"/>
 <fullyQualifiedTypeName name="com.lanou3g.finals.FinalDemo"/>
+<fullyQualifiedTypeName name="com.lanou3g.study.Company"/>
+<fullyQualifiedTypeName name="com.lanou3g.study.Doctor"/>
+<fullyQualifiedTypeName name="com.lanou3g.inter.Work"/>
+<fullyQualifiedTypeName name="com.lanou3g.study.Teacher"/>
+<fullyQualifiedTypeName name="com.lanou3g.inter.WatchDog"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.lanou3g.normal.CalendarDemo"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="homework.Worker"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
