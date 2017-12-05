@@ -19,4 +19,8 @@ public class Student {
 		return name;
 	}
 
+	public static void main(String[] args) {
+
+	}
+
 }

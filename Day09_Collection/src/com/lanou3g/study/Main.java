@@ -57,7 +57,7 @@ public class Main {
 		//给集合添加一个元素
 		//add方法可以接收任意一个类型的对象
 		list.add("张三");
-		list.add(new Student());
+//		list.add(new Student());
 		list.add(1);
 
 		System.out.println(list.size());
