@@ -17,4 +17,15 @@ public class Hero {
 	public void skill(){
 		System.out.println("释放了技能");
 	}
+
+	private void show(String what){
+		System.out.println("show："+what);
+	}
+
+	@Override
+	public String toString() {
+		return "Hero{" +
+				"name='" + name + '\'' +
+				'}';
+	}
 }

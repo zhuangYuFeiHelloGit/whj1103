@@ -1,8 +1,10 @@
 package com.lanou3g.today;
 
+import com.lanou3g.yesterday.one.Student;
 import org.junit.Test;
 
-import java.util.ArrayList;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 /**
  * Created by zyf on 2017/12/6.
@@ -58,7 +60,7 @@ public class Main {
 
 
 	@Test
-	public void t2() throws IllegalAccessException, InstantiationException {
+	public void t2() throws IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
 		/**
 		 * 反射是用来干什么的？
 		 * 反射可以帮我们在没有对象的情况下
@@ -66,7 +68,7 @@ public class Main {
 		 * 调用私有方法或属性
 		 */
 
-		Hero hero = new Hero();
+//		Hero hero = new Hero();
 
 		//类对象
 		//instance 实例
@@ -75,7 +77,14 @@ public class Main {
 		Hero hero1 = Hero.class.newInstance();
 
 
-//		Hero.class.getMethod()
+
+		//方法对象
+		Method skill =
+			Hero.class.getMethod("skill");
+
+		skill.invoke(hero1);
+
+
 	}
 
 
@@ -111,4 +120,19 @@ public class Main {
 	}
 
 
+	@Test
+	public void t4() throws Exception{
+//		Student student =
+//			Demo.getInstance(Student.class);
+
+		Object o =
+			Demo.getInstance(getSomething());
+
+		System.out.println(o.toString());
+
+	}
+
+	public String getSomething(){
+		return "com.lanou3g.today.Hero";
+	}
 }
