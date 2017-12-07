@@ -51,6 +51,14 @@ public class Person {
 		this.job = job;
 	}
 
+
+	@Override
+	public boolean equals(Object obj) {
+
+		return ((Person)obj).getUsername()
+				.equals(this.getUsername());
+	}
+
 	@Override
 	public String toString() {
 		return "Person{" +

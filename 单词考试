@@ -23,8 +23,18 @@ data 数据
 random 随机数
 element	元素
 type		类型
+library	图书馆	库
+exception	异常
+throw	抛，在方法中抛
+throws	在方法声明中抛
+variable 变量
 
+precede 优于
+declare	声明
 
-
+Document 文件，文档，文献
+root	根
+element	元素
+attribute 属性
 
 

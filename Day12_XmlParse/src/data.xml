@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!--
+    students是这个xml文件的最外层的标签
+    是这个xml文档的根元素
+    一个xml文档中只能有一个根元素
+
+    <xxx></xxx>
+    <xxx>：开始标签
+    </xxx>：结束标签
+-->
+<students>
+
+    <!--
+        student这个标签，称为students的子标签
+        name称为：student标签的属性
+        "张三"：name属性的值
+    -->
+    <student name="张三">
+
+        <!--
+            score是student的子标签
+            200：是标签中的文本
+        -->
+        <score>200</score>
+
+    </student>
+
+    <student name="李四">
+        <score>1000</score>
+    </student>
+
+
+</students>
+
+
+
+
+

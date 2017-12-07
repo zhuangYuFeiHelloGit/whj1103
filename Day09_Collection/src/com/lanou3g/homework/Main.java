@@ -1,5 +1,8 @@
 package com.lanou3g.homework;
 
+import com.lanou3g.homework.exception.LoginException;
+import com.lanou3g.homework.exception.RegisterException;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
@@ -18,6 +21,8 @@ public class Main {
 	private static final int BOSS = 4;
 
 
+	private static String username = null;
+	private static String password = null;
 
 
 	public static void main(String[] args) {
@@ -28,15 +33,14 @@ public class Main {
 			System.out.println("1，注册	2，登录");
 			int choice = input.nextInt();
 			input.nextLine();
+
 			switch (choice) {
 				case REGISTER_CODE:
 
 					System.out.println("请输入姓名：");
 					String name = input.nextLine();
-					System.out.println("请输入用户名：");
-					String username = input.nextLine();
-					System.out.println("请输入密码：");
-					String password = input.nextLine();
+					//接收用户名和密码
+					receive(input);
 					System.out.println("请选择职业：");
 					System.out.println("1，工人	2，医生	3，厨师	4，老板");
 					int job = input.nextInt();
@@ -54,12 +58,30 @@ public class Main {
 							break;
 					}
 
-					UserOperate.register(person);
-					System.out.println("注册成功");
+					try {
+						UserOperate.register(person);
+						System.out.println("注册成功");
 
-					System.out.println(Arrays.toString(UserData.users.toArray()));
+						System.out.println(Arrays.toString(UserData.users.toArray()));
+					} catch (RegisterException e) {
+						//将异常的信息提示给用户
+						System.out.println(e.getMessage());
+
+						continue;
+					}
+
 					break;
 				case LOGIN_CODE:
+					receive(input);
+
+					try {
+						Person login =
+							UserOperate.login(username, password);
+					} catch (LoginException e) {
+						System.out.println(e.getMessage());
+						continue;
+					}
+
 					break;
 
 			}
@@ -67,4 +89,12 @@ public class Main {
 
 
 	}
+
+	public static void receive(Scanner input) {
+		System.out.println("请输入用户名：");
+		username = input.nextLine();
+		System.out.println("请输入密码：");
+		password = input.nextLine();
+	}
+
 }
