@@ -3,3 +3,39 @@
 
 
 二，标记，元素，指的都是标签
+
+
+三，读取xml中的内容
+    性感的读者
+    SAXReader
+
+    所有xml中的数据，都会被封装到document中
+
+
+    Element类，表示xml中的<xx> 标签（元素，标记）
+
+    Attribute类，表示xml中的<xx yy="">这个yy
+        也就是属性
+
+    Text类，表示文本
+
+    类或对象，是事物的抽象
+
+
+四，写入内容到xml文件
+    DocumentHelper类帮我们创建一个document对象
+
+    addElement("元素名");添加元素
+    xxxxxx              添加属性
+    xxxxxx              添加文本
+
+
+    XMLWriter类，
+    帮助我们把document写入到xml文件中
+
+
+
+
+
+
+

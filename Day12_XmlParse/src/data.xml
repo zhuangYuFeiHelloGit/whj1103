@@ -11,7 +11,6 @@
     </xxx>：结束标签
 -->
 <students>
-
     <!--
         student这个标签，称为students的子标签
         name称为：student标签的属性
@@ -26,12 +25,9 @@
         <score>200</score>
 
     </student>
-
     <student name="李四">
         <score>1000</score>
     </student>
-
-
 </students>
 
 
