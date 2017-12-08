@@ -7,6 +7,7 @@ public class Student {
 	private String name;
 	private int score;
 
+	private Cat cat;
 
 	@Override
 	public String toString() {

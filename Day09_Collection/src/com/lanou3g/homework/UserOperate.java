@@ -12,7 +12,8 @@ public class UserOperate {
 			String username,
 			String password) throws LoginException{
 
-		Person person = UserData.userMap.get(username);
+//		Person person = UserData.userMap.get(username);
+		Person person = UserData.getPerson(username);
 		if(person == null){
 			throw new UsernameNotExistsException();
 		}
@@ -35,15 +36,18 @@ public class UserOperate {
 
 		//listRegister(person);
 
-		Person p =
-			UserData.userMap.get(person.getUsername());
+//		Person p =
+//			UserData.userMap.get(person.getUsername());
+
+		Person p = UserData.getPerson(person.getUsername());
 
 		if(p != null){
 			throw new UsernameExistsException();
 		}
 
 		if(PasswordCheckTool.isNotEasy(person.getPassword())){
-			UserData.userMap.put(person.getUsername(),person);
+//			UserData.userMap.put(person.getUsername(),person);
+			UserData.insertPerson(person);
 		}
 
 

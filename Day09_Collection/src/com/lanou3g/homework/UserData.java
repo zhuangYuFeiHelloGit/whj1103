@@ -19,5 +19,16 @@ public class UserData {
 	public static Map<String,Person> userMap
 			= new HashMap<>();
 
+	public static Person getPerson(String username){
+
+		return new Person();
+	}
+
+	public static void insertPerson(Person person){
+		//要插入到xml文件中
+
+
+	}
+
 
 }

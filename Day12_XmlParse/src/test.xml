@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<students>
+    <student name="张三" score="100">
+
+    </student>
+    <student name="李四" score="200">
+
+    </student>
+    <student name="王五" score="300">
+
+    </student>
+    <student name="赵六" score="400">
+
+    </student>
+
+
+    <teacher name="老庄">
+        <hobby>play lol</hobby>
+
+        <student name="" score="" cat="">
+
+            <cat color="">
+                <weight></weight>
+            </cat>
+
+
+        </student>
+    </teacher>
+
+
+</students>
