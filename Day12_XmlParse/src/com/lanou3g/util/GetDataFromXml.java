@@ -49,8 +49,7 @@ public class GetDataFromXml<T> {
 		}
 		//创建一个对象
 		T t = clazz.newInstance();
-
-
+		
 		//获取该类中所有的属性
 		Field[] allFields = this.clazz.getDeclaredFields();
 

@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3f3908-6059-49d4-9d4e-d0bc118cc8ea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lanou3g/study/Cat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lanou3g/study/Teacher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lanou3g/study/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lanou3g/util/GetDataFromXml.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../作业完成情况汇总.xlsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Day12_XmlParse/com/lanou3g/study/Main4.class" afterPath="$PROJECT_DIR$/out/production/Day12_XmlParse/com/lanou3g/study/Main4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Day12_XmlParse/com/lanou3g/study/Student.class" afterPath="$PROJECT_DIR$/out/production/Day12_XmlParse/com/lanou3g/study/Student.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day09_Collection/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Day09_Collection/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day09_Collection/src/com/lanou3g/homework/Main.java" afterPath="$PROJECT_DIR$/../Day09_Collection/src/com/lanou3g/homework/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day09_Collection/src/com/lanou3g/homework/UserData.java" afterPath="$PROJECT_DIR$/../Day09_Collection/src/com/lanou3g/homework/UserData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day09_Collection/src/com/lanou3g/homework/UserOperate.java" afterPath="$PROJECT_DIR$/../Day09_Collection/src/com/lanou3g/homework/UserOperate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lanou3g/study/Student.java" afterPath="$PROJECT_DIR$/src/com/lanou3g/study/Student.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lanou3g/util/GetDataFromXml.java" afterPath="$PROJECT_DIR$/src/com/lanou3g/util/GetDataFromXml.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -31,7 +18,20 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="GetDataFromXml.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/lanou3g/util/GetDataFromXml.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,11 +55,11 @@
         <option value="$PROJECT_DIR$/src/课堂笔记.txt" />
         <option value="$PROJECT_DIR$/src/com/lanou3g/study/Main4.java" />
         <option value="$PROJECT_DIR$/src/com/lanou3g/study/Test.java" />
-        <option value="$PROJECT_DIR$/src/com/lanou3g/util/GetDataFromXml.java" />
         <option value="$PROJECT_DIR$/src/com/lanou3g/study/Teacher.java" />
         <option value="$PROJECT_DIR$/src/com/lanou3g/study/Cat.java" />
         <option value="$PROJECT_DIR$/src/com/lanou3g/study/Student.java" />
         <option value="$PROJECT_DIR$/src/test.xml" />
+        <option value="$PROJECT_DIR$/src/com/lanou3g/util/GetDataFromXml.java" />
       </list>
     </option>
   </component>
@@ -93,6 +93,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -187,8 +189,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -663,15 +663,16 @@
       <workItem from="1512658971602" duration="12000" />
       <workItem from="1512699096858" duration="603000" />
       <workItem from="1512699718446" duration="234000" />
+      <workItem from="1512702187888" duration="1219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18236000" />
+    <option name="totallyTimeSpent" value="19455000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1240" height="1001" extended-state="6" />
-    <editor active="false" />
+    <frame x="40" y="23" width="1240" height="1001" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -683,7 +684,7 @@
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24958263" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25375625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -977,16 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lanou3g/util/GetDataFromXml.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lanou3g/study/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -1018,6 +1009,16 @@
         <state relative-caret-position="528">
           <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou3g/util/GetDataFromXml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

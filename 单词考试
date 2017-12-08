@@ -36,5 +36,6 @@ Document 文件，文档，文献
 root	根
 element	元素
 attribute 属性
+recursive 递归
 
 

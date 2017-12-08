@@ -1,0 +1,233 @@
+一，List和ArrayList
+
+
+二，Map与HashMap
+
+
+三，Collection：集合
+List：有序的，可重复
+Set：无序，不可重复
+
+Map和Collection有什么关系吗？
+没什么关系
+
+
+四，	ArrayList，add，get
+	remove
+	HashMap   put，get
+
+五，键值对：Map.Entry
+hashMap.entrySet();
+Set是一个集合。
+entrySet()获得的就是装着Entry的集合。
+
+iter快捷键
+
+Iterator：迭代器
+while(it.hasNext()){
+	Object obj = it.next();
+}
+
+keySet()得到的是所有key的集合
+
+for(Object obj:map.keySet){
+	map.get(obj);//得到对应的值
+}
+
+
+//得到的是所有的值
+for(Object obj:map.values()){
+	
+}
+
+
+
+六，泛型
+	规范集合中装的内容
+
+	List<String>
+	Map<String,Student>
+
+七，反射
+	通过反射可以直接拿到某一个类所有的信息
+	包含成员变量，方法等
+
+	//首先要有一个类才行
+
+	Student.class//类对象
+
+	public void show(String content){
+
+	}
+	public void d(int content){
+
+	}
+
+	Method show = Student.class
+	.getMethod("d",Interget.class);
+
+	Student stu = Student.class.newInstance();
+
+
+	Class<T> clazz = 等待别人传入;
+	Method 
+	Field
+	上帝
+	God 
+	Dog
+	Cat
+
+	T t = clazz.newInstance();
+
+
+	show.invoke(t,"我是内容",1);
+
+
+八，递归
+	九九乘法表
+	翻转字符串
+
+	重复的操作，并且不知道什么时候结束
+	有很多层，并你不确定有几层
+
+	自己调自己
+
+	int a = 0;
+	public void showRecursive(){
+		a++;
+		sout("之前"+a);
+		if(a > 3){
+			return;
+		}
+		showRecursive();
+		sout("之后"+a);
+	}
+	
+
+
+九，泛型类，泛型接口，泛型方法
+
+public class Tool<T>{
+
+	public T getFromXX(){
+		return t;
+	}
+	
+}
+
+new Tool<Student>;
+
+
+public <T> void insert(T t){
+	//将t这个对象插入到哪儿哪儿
+
+} 
+
+
+10，可变参数
+public void show(String... s){
+	//s被当做一个数组使用
+	iter
+}
+
+String[] a = {"x","y","z"};
+
+show()
+show("x","y","z");
+show(a);
+
+11，异常
+	Exception
+
+	throw：方法里抛出一个异常对象
+	throws：在方法的声明中声明可能会抛出的异常类型
+
+	try{
+		1...
+		String msg = UserOperate.register();
+		3....
+
+	}catch(XXXException xe){
+		4....
+	}catch(YYYException ye){
+
+	}finally{
+		//一定会执行的
+		//即使在try或catch中return
+		//也会执行
+		5....
+	}
+
+	如果在2抛出异常，程序执行顺序为
+	1，2，4，5
+
+	要注意，范围大的放在下面
+
+
+异常最重要的使用方式：
+	1，流程控制
+	2，传递一个信息给外界
+
+
+12，xml解析
+	SAXReader saxReader = 
+	new SAXReader();
+
+//表示文档
+	Document document = saxReader.read(new File(path));
+
+//获取文档的根元素
+	Element root = document.getRootElement();
+
+	//获得root的属性
+	root.attribute(name);
+	List<Attribute> attrs = root.attributes();
+
+	//获得root的子元素
+
+	Element child = 
+	root.element(eleName);
+	List<Element> children = 
+	root.elements();
+
+	for(Elment e : children){
+		//获得e的子元素
+		e.elements();
+		e.element(eleName);
+		//获得e的属性
+		e.attribute(attrName);
+		e.attributes();
+	}
+
+
+
+	//写入
+	写入会覆盖
+
+	先读出来得到document
+	这个document中，就已经有了原来的数据
+
+	往document中添加元素
+	然后写到文件中
+
+	Element ele = doc.addElement(eleName);
+	ele.setText(x);
+	ele.addAttribute(name,value);
+
+	Element childEle = 
+	ele.addElement(childEle);
+
+
+	DocumentHelper
+	XMLWriter(new FileWriter(path));
+
+	write(doc);
+	write.close();
+
+
+
+
+
+
+
+
