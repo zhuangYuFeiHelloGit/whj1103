@@ -37,5 +37,7 @@ root	根
 element	元素
 attribute 属性
 recursive 递归
+status	状态、
+init	初始化的意思
 
 
