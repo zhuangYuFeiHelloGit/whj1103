@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b23551-9131-46f0-8734-386c3d34a0e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lanou3g/study/DeadLock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lanou3g/study/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lanou3g/study/Main2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lanou3g/study/ThreadDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lanou3g/study/Ticket.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lanou3g/study/DeadLock.java" afterPath="$PROJECT_DIR$/src/com/lanou3g/study/DeadLock.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +21,8 @@
       <file leaf-file-name="DeadLock.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lanou3g/study/DeadLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+            <state relative-caret-position="440">
+              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -549,12 +543,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512963286919</updated>
       <workItem from="1512963289713" duration="2110000" />
-      <workItem from="1512974525122" duration="2739000" />
+      <workItem from="1512974525122" duration="2938000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4849000" />
+    <option name="totallyTimeSpent" value="5048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1240" height="1001" extended-state="0" />
@@ -688,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lanou3g/study/DeadLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        <state relative-caret-position="440">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
