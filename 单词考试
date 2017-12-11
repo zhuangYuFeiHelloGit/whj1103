@@ -40,4 +40,7 @@ recursive 递归
 status	状态、
 init	初始化的意思
 
+branch 分支
+commit 提交
+merge 合并
 
