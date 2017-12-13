@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Day16_项目练习后端:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Day16__war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Day16_项目练习后端/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Day16_项目练习后端" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="libs" />
+          <element id="library" level="module" name="JUnit4" module-name="Day16_项目练习后端" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
