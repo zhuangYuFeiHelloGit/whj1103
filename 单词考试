@@ -44,3 +44,8 @@ branch 分支
 commit 提交
 merge 合并
 
+socket
+stream
+input
+output
+Serializable 序列号(接口)
