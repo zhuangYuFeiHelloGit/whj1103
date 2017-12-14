@@ -29,7 +29,6 @@ public class TenServlet extends HttpServlet {
 
 
 
-
 		response.setContentType("text/html;charset=utf-8");
 
 		try {

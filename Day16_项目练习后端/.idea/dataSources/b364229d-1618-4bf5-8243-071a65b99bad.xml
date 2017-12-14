@@ -232,5 +232,9 @@
       <Position>1</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
+    <column id="81" parent="36" name="level">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
   </database-model>
 </dataSource>
