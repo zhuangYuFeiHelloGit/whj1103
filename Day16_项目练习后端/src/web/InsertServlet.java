@@ -48,7 +48,6 @@ public class InsertServlet extends HttpServlet {
 				return;
 			}
 
-
 			System.out.println(username);
 
 			userDao.insert(username, score);
