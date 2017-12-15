@@ -38,7 +38,9 @@ public class UserDao {
 		QueryRunner qr = new QueryRunner();
 		String insert = "insert into userscore values(?,?,?)";
 		try {
-			qr.update(JdbcUtil.getConnection(), insert, username, score,System.currentTimeMillis());
+			Connection conn = JdbcUtil.getConnection();
+			qr.update(conn, insert, username, score,System.currentTimeMillis());
+			JdbcUtil.close(conn);
 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -50,7 +52,10 @@ public class UserDao {
 		QueryRunner qr = new QueryRunner();
 		String first = "select * from  userscore order by score ASC , time ASC limit 0,1";
 		try {
-			User user = qr.query(JdbcUtil.getConnection(), first, new BeanHandler<>(User.class));
+			Connection conn = JdbcUtil.getConnection();
+
+			User user = qr.query(conn, first, new BeanHandler<>(User.class));
+			JdbcUtil.close(conn);
 			return user;
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -62,7 +67,10 @@ public class UserDao {
 		QueryRunner qr = new QueryRunner();
 		String first = "select * from  userscore order by score ASC , time ASC limit 0,10";
 		try {
-			List<User> user = qr.query(JdbcUtil.getConnection(), first, new BeanListHandler<User>(User.class));
+			Connection conn = JdbcUtil.getConnection();
+
+			List<User> user = qr.query(conn, first, new BeanListHandler<User>(User.class));
+			JdbcUtil.close(conn);
 			return user;
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -80,28 +80,24 @@ public class Main {
 			difficult.add(i);
 		}
 
+		//小写字母
+		for (char i = 97; i <= 122; i++) {
+			easy.add(i);
+		}
+		//数字
+		for (char i = 48; i <= 57; i++) {
+			easy.add(i);
+		}
+
+		middle.addAll(easy);
+
 		//大写字母
 		for (char i = 65; i <= 90; i++) {
 			middle.add(i);
 		}
-		//小写字母
-		for (char i = 97; i <= 122; i++) {
-			middle.add(i);
-		}
-		//数字
-		for (char i = 48; i <= 57; i++) {
-			middle.add(i);
-		}
 
 
-		//小写字母
-		for (char i = 97; i <= 122; i++) {
-			easy.add(i);
-		}
-		//数字
-		for (char i = 48; i <= 57; i++) {
-			easy.add(i);
-		}
+
 	}
 
 	public static void startGame(List<Character> cs, int times) {

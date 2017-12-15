@@ -96,6 +96,7 @@ public class NetTool {
 	 */
 	public <T> T pullXml(String url,Class<T> clazz){
 		String xml = getResultString(url);
+		System.out.println(xml);
 		XStream xStream = new XStream(new Dom4JDriver());
 		xStream.alias("User", User.class);
 		T t = null;
@@ -110,7 +111,6 @@ public class NetTool {
 		return t;
 	}
 
-
 	/**
 	 * 获得访问的字符串结果
 	 * 可能是xml
@@ -118,7 +118,7 @@ public class NetTool {
 	 * @param url
 	 * @return
 	 */
-	public String getResultString(String url) {
+	private String getResultString(String url) {
 		StringBuilder sb = new StringBuilder();
 		try {
 			URL u = new URL(url);
