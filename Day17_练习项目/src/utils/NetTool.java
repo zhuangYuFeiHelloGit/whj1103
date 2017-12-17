@@ -19,7 +19,20 @@ import java.util.List;
  * Created by zyf on 2017/12/14.
  */
 public class NetTool {
+	private static NetTool instance = new NetTool();
 
+	//xxxxxxxx
+
+	private NetTool(){
+
+	}
+
+	public static NetTool getInstance(){
+		if(instance == null){
+			instance=new NetTool();
+		}
+		return instance;
+	}
 
 	/**
 	 * 提交分数
@@ -62,7 +75,6 @@ public class NetTool {
 		}
 
 		return list;
-
 
 	}
 

@@ -60,12 +60,12 @@ exit  退出
 query 询问
 affected 影响
 row 行
+column 列
 table 表
 second 秒
 xx	分钟
 hour 小时
 description 描述
 SQL
-
-
+average 平均
 

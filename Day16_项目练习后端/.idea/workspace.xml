@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be35e233-3754-452f-be44-ca70dac2c7e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/web/InsertServlet.java" afterPath="$PROJECT_DIR$/src/web/InsertServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../单词考试" afterPath="$PROJECT_DIR$/../单词考试" />
-    </list>
+    <list default="true" id="be35e233-3754-452f-be44-ca70dac2c7e5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -862,7 +859,7 @@
       <updated>1513151357269</updated>
       <workItem from="1513151359436" duration="3867000" />
       <workItem from="1513155249129" duration="13145000" />
-      <workItem from="1513308792132" duration="51000" />
+      <workItem from="1513308792132" duration="173000" />
     </task>
     <servers />
   </component>
@@ -899,7 +896,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17063000" />
+    <option name="totallyTimeSpent" value="17185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1240" height="1001" extended-state="6" />

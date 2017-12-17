@@ -35,7 +35,8 @@ public class Main {
 
 		input = new Scanner(System.in);
 		random = new Random();
-		netTool = new NetTool();
+		NetTool.getInstance();
+
 
 		System.out.println("欢迎光临，默认昵称为：douniwan");
 
