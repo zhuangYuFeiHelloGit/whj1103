@@ -2,40 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d844797-87cb-446b-8cad-a3b92f9de88b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/libs/commons-beanutils-1.8.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/libs/commons-collections-3.2.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/libs/commons-lang-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/libs/commons-logging-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/libs/dom4j-1.6.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/libs/ezmorph-1.0.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/libs/json-lib-2.4-jdk15.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/libs/xmlpull_1_0_5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/libs/xpp3_min-1.1.4c.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/libs/xstream-1.4.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/.idea/libraries/libs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/.idea/preferred-vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/Day17_练习项目.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/src/bean/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/src/main/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/src/main/MainTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/src/utils/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day17_练习项目/src/utils/NetTool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day16_项目练习后端/out/artifacts/Day16__war_exploded/WEB-INF/classes/domain/User.class" afterPath="$PROJECT_DIR$/../Day16_项目练习后端/out/artifacts/Day16__war_exploded/WEB-INF/classes/domain/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day16_项目练习后端/out/artifacts/Day16__war_exploded/WEB-INF/classes/web/FirstServlet.class" afterPath="$PROJECT_DIR$/../Day16_项目练习后端/out/artifacts/Day16__war_exploded/WEB-INF/classes/web/FirstServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day16_项目练习后端/out/artifacts/Day16__war_exploded/WEB-INF/classes/web/TenServlet.class" afterPath="$PROJECT_DIR$/../Day16_项目练习后端/out/artifacts/Day16__war_exploded/WEB-INF/classes/web/TenServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day16_项目练习后端/out/production/Day16_项目练习后端/domain/User.class" afterPath="$PROJECT_DIR$/../Day16_项目练习后端/out/production/Day16_项目练习后端/domain/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day16_项目练习后端/out/production/Day16_项目练习后端/web/FirstServlet.class" afterPath="$PROJECT_DIR$/../Day16_项目练习后端/out/production/Day16_项目练习后端/web/FirstServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day16_项目练习后端/out/production/Day16_项目练习后端/web/TenServlet.class" afterPath="$PROJECT_DIR$/../Day16_项目练习后端/out/production/Day16_项目练习后端/web/TenServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day16_项目练习后端/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Day16_项目练习后端/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day16_项目练习后端/src/domain/User.java" afterPath="$PROJECT_DIR$/../Day16_项目练习后端/src/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day16_项目练习后端/src/web/FirstServlet.java" afterPath="$PROJECT_DIR$/../Day16_项目练习后端/src/web/FirstServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day16_项目练习后端/src/web/TenServlet.java" afterPath="$PROJECT_DIR$/../Day16_项目练习后端/src/web/TenServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day15_IO/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day15_IO/src/com/lanou3g/study/Person.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day15_IO/src/com/lanou3g/study/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day15_IO/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Day15_IO/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Day16_Homework/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Day16_Homework/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lanou3g/study/Main.java" afterPath="$PROJECT_DIR$/src/com/lanou3g/study/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../单词考试" afterPath="$PROJECT_DIR$/../单词考试" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../惩罚措施" afterPath="$PROJECT_DIR$/../惩罚措施" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -51,12 +25,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lanou3g/study/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-552">
-              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="200">
+              <caret line="55" column="8" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,7 +41,7 @@
       <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lanou3g/study/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="720">
               <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding />
             </state>
@@ -104,7 +78,7 @@
     <option name="x" value="40" />
     <option name="y" value="23" />
     <option name="width" value="1240" />
-    <option name="height" value="777" />
+    <option name="height" value="1001" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -556,14 +530,15 @@
       <workItem from="1513133685291" duration="676000" />
       <workItem from="1513134382335" duration="2475000" />
       <workItem from="1513214001213" duration="1230000" />
+      <workItem from="1513584437414" duration="184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4381000" />
+    <option name="totallyTimeSpent" value="4565000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1240" height="777" extended-state="6" />
+    <frame x="40" y="23" width="1240" height="1001" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -621,7 +596,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lanou3g/study/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="720">
           <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding />
         </state>
@@ -629,8 +604,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lanou3g/study/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou3g/study/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lanou3g/study/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="55" column="8" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -49,8 +49,11 @@ public class Main {
 		//{}
 		//[] 就是一个数组
 
+		String info =
+				"{'name':'张三疯','gender':'男'}";
+
 		JSONObject jsonObject =
-				JSONObject.fromObject(result);
+				JSONObject.fromObject(info);
 		Book book = (Book)
 				JSONObject.toBean(
 						jsonObject, Book.class

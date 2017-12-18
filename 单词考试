@@ -48,7 +48,7 @@ socket
 stream
 input
 output
-Serializable 序列号(接口)
+Serializable 序列化(接口)
 Expression 表达式
 regular	   正则
 
@@ -68,4 +68,10 @@ hour 小时
 description 描述
 SQL
 average 平均
+
+primary key 主键
+foreign key 外键
+constraint 约束
+auto_increment 自增长
+
 
