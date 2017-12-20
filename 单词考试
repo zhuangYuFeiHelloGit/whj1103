@@ -73,5 +73,14 @@ primary key 主键
 foreign key 外键
 constraint 约束
 auto_increment 自增长
+union	合并结果集
+inner join 内连接
+left outer join 左外
+right outer join 右外
 
+
+connection 连接
+register 注册
+login 登录
+logout 登出
 
