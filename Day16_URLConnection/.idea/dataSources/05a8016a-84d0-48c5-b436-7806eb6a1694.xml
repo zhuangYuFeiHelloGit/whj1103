@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="bookstore">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="classmanager"/>
+    <schema id="4" parent="1" name="customers"/>
+    <schema id="5" parent="1" name="day16"/>
+    <schema id="6" parent="1" name="day18"/>
+    <schema id="7" parent="1" name="day19"/>
+    <schema id="8" parent="1" name="day3"/>
+    <schema id="9" parent="1" name="demo"/>
+    <schema id="10" parent="1" name="hbue"/>
+    <schema id="11" parent="1" name="hibernate"/>
+    <schema id="12" parent="1" name="homework12"/>
+    <schema id="13" parent="1" name="hw_sql"/>
+    <schema id="14" parent="1" name="information_schema"/>
+    <schema id="15" parent="1" name="jdbc"/>
+    <schema id="16" parent="1" name="jdfull"/>
+    <schema id="17" parent="1" name="mysql"/>
+    <schema id="18" parent="1" name="northwind"/>
+    <schema id="19" parent="1" name="outkey"/>
+    <schema id="20" parent="1" name="page"/>
+    <schema id="21" parent="1" name="performance_schema"/>
+    <schema id="22" parent="1" name="preh01"/>
+    <schema id="23" parent="1" name="proceduredemo"/>
+    <schema id="24" parent="1" name="querymany"/>
+    <schema id="25" parent="1" name="s2"/>
+    <schema id="26" parent="1" name="share"/>
+    <schema id="27" parent="1" name="struts2"/>
+    <schema id="28" parent="1" name="student"/>
+    <schema id="29" parent="1" name="study">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="30" parent="1" name="t"/>
+    <schema id="31" parent="1" name="transaction"/>
+    <table id="32" parent="29" name="dmt"/>
+    <table id="33" parent="29" name="employee"/>
+    <table id="34" parent="29" name="paylevel"/>
+    <table id="35" parent="29" name="st_year"/>
+    <table id="36" parent="29" name="stu"/>
+    <table id="37" parent="29" name="test"/>
+    <column id="38" parent="32" name="dmtid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="32" name="dmtname">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="40" parent="32" name="location">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="41" parent="32" name="PRIMARY">
+      <ColNames>dmtid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="43" parent="33" name="name">
+      <Position>2</Position>
+      <DataType>mediumtext|0</DataType>
+    </column>
+    <column id="44" parent="33" name="job">
+      <Position>3</Position>
+      <DataType>mediumtext|0</DataType>
+    </column>
+    <column id="45" parent="33" name="managerId">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="46" parent="33" name="hiredate">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="47" parent="33" name="pay">
+      <Position>6</Position>
+      <DataType>double(8,2)|0</DataType>
+    </column>
+    <column id="48" parent="33" name="prize">
+      <Position>7</Position>
+      <DataType>double(8,2)|0</DataType>
+    </column>
+    <column id="49" parent="33" name="dmtid">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="50" parent="34" name="level">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="51" parent="34" name="lowest">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="52" parent="34" name="heightest">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="53" parent="35" name="year">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="54" parent="35" name="年利润_百万">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="55" parent="36" name="name">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="56" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="57" parent="37" name="d">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="58" parent="37" name="fk__">
+      <ColNames>d</ColNames>
+    </index>
+    <key id="59" parent="37" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="60" parent="37" name="fk__">
+      <ColNames>d</ColNames>
+      <RefSchemaName>study</RefSchemaName>
+      <RefTableName>dmt</RefTableName>
+      <RefColNames>dmtid</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
