@@ -1,4 +1,4 @@
-package com.lanou3g.study;
+package com.lanou3g.utils;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
