@@ -17,22 +17,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="1_hello.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/1_hello.html">
+      <file leaf-file-name="bigRed.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bigRed.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="84" column="39" lean-forward="false" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+            <state relative-caret-position="296">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2_hello.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/2_hello.html">
+      <file leaf-file-name="9_HelloCSS.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/9_HelloCSS.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-760">
-              <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="248">
+              <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,6 +45,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -52,6 +55,14 @@
         <option value="$PROJECT_DIR$/1_hello.html" />
         <option value="$PROJECT_DIR$/web/2_hello.html" />
         <option value="$PROJECT_DIR$/web/1_hello.html" />
+        <option value="$PROJECT_DIR$/web/3_table.html" />
+        <option value="$PROJECT_DIR$/web/4_form.html" />
+        <option value="$PROJECT_DIR$/web/5_标签的语义化.html" />
+        <option value="$PROJECT_DIR$/web/6_下拉列表.html" />
+        <option value="$PROJECT_DIR$/web/7_fieldset.html" />
+        <option value="$PROJECT_DIR$/web/8_列表.html" />
+        <option value="$PROJECT_DIR$/css/bigRed.css" />
+        <option value="$PROJECT_DIR$/web/9_HelloCSS.html" />
       </list>
     </option>
   </component>
@@ -124,6 +135,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="22_HelloHtml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="22_HelloHtml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -138,6 +163,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -148,8 +174,20 @@
       <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.1_hello.html">
-    <configuration default="false" name="1_hello.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/22_HelloHtml/web/1_hello.html">
+  <component name="RunManager" selected="JavaScript Debug.9_HelloCSS.html">
+    <configuration default="false" name="5_标签的语义化.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/22_HelloHtml/web/5_标签的语义化.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="6_下拉列表.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/22_HelloHtml/web/6_下拉列表.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="7_fieldset.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/22_HelloHtml/web/7_fieldset.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="8_列表.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/22_HelloHtml/web/8_列表.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="9_HelloCSS.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/22_HelloHtml/web/9_HelloCSS.html">
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -462,12 +500,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.1_hello.html" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.5_标签的语义化.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.6_下拉列表.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.7_fieldset.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.8_列表.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.9_HelloCSS.html" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.1_hello.html" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.9_HelloCSS.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.8_列表.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.7_fieldset.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.6_下拉列表.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.5_标签的语义化.html" />
       </list>
     </recent_temporary>
   </component>
@@ -481,15 +527,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513825670401</updated>
-      <workItem from="1513825671656" duration="3311000" />
+      <workItem from="1513825671656" duration="13877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3311000" />
+    <option name="totallyTimeSpent" value="13877000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1240" height="1001" extended-state="6" />
+    <frame x="40" y="23" width="1240" height="1001" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -538,11 +584,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/3_table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/4_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/1_hello.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="84" column="39" lean-forward="false" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+        <state relative-caret-position="305">
+          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/7_fieldset.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/6_下拉列表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/8_列表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/5_标签的语义化.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#chenhonggang#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bigRed.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/9_HelloCSS.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

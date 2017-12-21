@@ -1,0 +1,21 @@
+/*
+    选择器
+    .确定了，这是一个类选择器
+    .后面的就是选择器的名字
+    {}及里面的内容叫：声明
+    color和font-size：属性名
+    red和40px：属性值
+
+    #表示是一个id选择器
+*/
+
+
+.show{
+    color: red;
+    font-size: 40px;
+}
+
+#m416{
+    background-color: coral;
+    color: white;
+}

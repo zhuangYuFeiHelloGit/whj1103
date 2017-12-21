@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <!--
+        表单：
+            用来收集用户的信息，传递给服务器
+
+        action属性：
+            一个路径，表示要将收集到的信息提交到哪儿
+        method属性：
+            表示提交的方式，一般表单的提交方式都是post
+    -->
+    <form action="http://192.168.20.221:8080/day16/login"
+          method="post">
+        <!--
+            label标签：提示作用，提示用户
+                后面的输入框是干什么的
+            for属性：接收一个标签的id
+            当点击label标签时，for属性指定的标签会获得焦点
+        -->
+        <label for="username">用户名：</label>
+        <input type="text" id="username" name="username">
+        <input type="text" id="gender" name="username">
+        <label for="password">密码：</label>
+
+
+        <!--
+            input标签的type属性决定了这个标签
+            显示的样式
+            text：文本框
+            password：密码框
+            checkbox：多选框
+            radio：单选框
+
+
+            id：可以直接找到这个组件
+
+            name：在后端时，通过getParamter方法
+                传入name，获得值
+                相当于键值对：name-value
+
+                name是可以重复的
+        -->
+        <input type="password"
+               id="password"
+               name="password">
+
+        <br/>
+        请选择爱好：
+        <label for="playBasketball">打篮球</label>
+        <input type="checkbox"
+               id="playBasketball"
+               name="hobbies">
+        <label for="lol">英雄联盟</label>
+        <input type="checkbox"
+               id="lol"
+               name="hobbies">
+        <label for="code">敲代码</label>
+        <input type="checkbox"
+               id="code"
+               name="hobbies">
+
+        <br>
+        请选择性别：
+        <label for="man">男</label>
+
+        <input type="radio"
+                id="man"
+                name="gender">
+        <label for="woman">女</label>
+
+        <input type="radio"
+                id="woman"
+                name="gender">
+
+        <!--
+            提交按钮
+        -->
+        <input type="submit">
+
+        <!--重置按钮-->
+        <input type="reset">
+
+    </form>
+
+
+
+</body>
+</html>

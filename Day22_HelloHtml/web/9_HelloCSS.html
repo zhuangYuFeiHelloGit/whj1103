@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层叠样式表</title>
+    <link   href="../css/bigRed.css"
+            rel="stylesheet">
+    <style type="text/css">
+        p{
+            /*
+            标签选择器
+            没有什么符号，只是一个标签的名字即可
+            会选择所有的p标签
+            */
+            background-color: blueviolet;
+            color: white;
+            font-size: 30px;
+            /*加粗*/
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        CSS：Cascading Style Sheets
+            层叠样式表
+        什么是层叠样式表？
+            讲过了
+
+        1，外部CSS
+            将CSS代码，写在一个.css文件中
+            将这个.css文件，导入到当前html文档中
+        2，内部CSS
+            在<head>标签中，写一个子标签<style>
+            将CSS代码，写在<style>内部
+
+            选择器的优先级：
+                行内样式>id选择器>类选择器>标签选择器
+        3，行内CSS
+            写在标签内部的，style属性上
+
+
+    -->
+
+    <!--无语义，无任何特殊样式-->
+    <!---->
+    <span></span>
+
+    <h1>枯藤老树昏鸦，小桥流水人家，<span class="show">古</span>道西风瘦马，夕阳西下，断肠人在天涯</h1>
+
+    <p  id="m416"
+        class="show"
+        style="color: darkcyan">忽如一夜春风来，千树万树梨花开</p>
+
+
+    <!--也是无语义的，没什么特殊样式-->
+    <!--主要是用来划分模块-->
+    <div >何时眼前突兀见此屋，吾庐独破受冻死亦足</div>
+</body>
+</html>
