@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        a:hover{
+            /*伪类选择器*/
+
+            color: red;
+            font-size: 40px;
+            text-decoration-line: line-through;
+        }
+
+        div{
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .float{
+            width: 200px;
+            height: 150px;
+            background-color: red;
+        }
+
+        .left{
+            float: left;
+        }
+
+        .right{
+            float: right;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <a href="1_CSS选择器.html">去111111</a>
+
+    <!--
+        顺序文档流：
+            HTML文档的加载，是从上到下的
+            在浏览器中显示时，也是从上到下依次显示的。
+            这个正常顺序，就是正常的文档流。
+
+        浮动：
+            将标签，从正常的文档流中悬浮起来。
+            也就是在浏览器中显示时，
+            不在按照从上到下，从左到右的顺序了。
+
+    -->
+
+
+
+    <div>
+
+        <div class="float left"></div>
+        <div class="float right"></div>
+
+    </div>
+
+
+
+</body>
+</html>
