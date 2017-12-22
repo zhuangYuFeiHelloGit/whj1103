@@ -32,4 +32,17 @@ public class WhQueryRunner extends QueryRunner {
 		conn.close();
 		return t;
 	}
+
+
+	@Override
+	public int update(Connection conn, String sql, Object... param) throws SQLException {
+		//开启事务
+		conn.setAutoCommit(false);
+		int update = super.update(conn, sql, param);
+		//提交事务
+		conn.commit();
+		conn.close();
+		return update;
+	}
+
 }
