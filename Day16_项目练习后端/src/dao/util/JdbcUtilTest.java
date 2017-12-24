@@ -16,4 +16,9 @@ public class JdbcUtilTest {
 			e.printStackTrace();
 		}
 	}
+
+	@Test
+	public void t1(){
+		System.out.println(System.currentTimeMillis());
+	}
 }

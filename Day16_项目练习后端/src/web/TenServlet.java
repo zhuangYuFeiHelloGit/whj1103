@@ -27,6 +27,9 @@ public class TenServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
+		response.addHeader("Access-Control-Allow-Origin","*");
+		/*星号表示所有的域都可以接受，*/
+		response.addHeader("Access-Control-Allow-Methods","GET,POST");
 
 
 		response.setContentType("text/html;charset=utf-8");

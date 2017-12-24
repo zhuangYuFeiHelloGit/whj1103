@@ -26,6 +26,9 @@ public class FirstServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
+		response.addHeader("Access-Control-Allow-Origin","*");
+		/*星号表示所有的域都可以接受，*/
+		response.addHeader("Access-Control-Allow-Methods","GET,POST");
 		String level = request.getParameter("level");
 
 		try {
@@ -40,9 +43,10 @@ public class FirstServlet extends HttpServlet {
 			xStream.alias("User",User.class);
 			String fx = xStream.toXML(first);
 			System.out.println(fx);
-//			JSONObject jsonObject = JSONObject.fromObject(first);
-//			String string = jsonObject.toString();
-			response.getWriter().write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"+fx);
+			JSONObject jsonObject = JSONObject.fromObject(first);
+			String string = jsonObject.toString();
+//			response.getWriter().write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"+fx);
+			response.getWriter().write(string);
 		} catch (IOException e) {
 			response.getWriter().write("==========如果老庄在，请呼叫老庄==========\n\t"+e.getMessage());
 
