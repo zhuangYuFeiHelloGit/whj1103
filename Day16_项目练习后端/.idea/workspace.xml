@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be35e233-3754-452f-be44-ca70dac2c7e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/10_ajax异步获取.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/11_获取一个JSON数组.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/1_helloJQ.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/2_文档加载后执行.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/3_双击事件与进入进出.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/4_enter与over的区别.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/5_JQ动画.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/6_动画队列.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/7_操作元素属性.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/8_操作CSS样式.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/9_添加和删除元素.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/css/myDiv.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_JQuery/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_Java中的链式调用/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_Java中的链式调用/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_Java中的链式调用/.idea/preferred-vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_Java中的链式调用/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_Java中的链式调用/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_Java中的链式调用/Day26_Java中的链式调用.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_Java中的链式调用/src/Student.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Day26_Java中的链式调用/src/T.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../单词考试" afterPath="$PROJECT_DIR$/../单词考试" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -118,8 +96,8 @@
       <file leaf-file-name="FirstServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/web/FirstServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -840,7 +818,8 @@
       <workItem from="1513840509628" duration="2372000" />
       <workItem from="1513962357827" duration="2874000" />
       <workItem from="1514360162383" duration="1194000" />
-      <workItem from="1514364990862" duration="17000" />
+      <workItem from="1514364990862" duration="160000" />
+      <workItem from="1514368162780" duration="140000" />
     </task>
     <servers />
   </component>
@@ -877,11 +856,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23642000" />
+    <option name="totallyTimeSpent" value="23925000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1240" height="1001" extended-state="1" />
-    <editor active="true" />
+    <frame x="40" y="23" width="1240" height="1001" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1416,8 +1395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/web/FirstServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
           <folding />
         </state>
       </provider>
