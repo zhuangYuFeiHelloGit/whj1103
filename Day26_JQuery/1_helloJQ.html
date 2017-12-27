@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="js/jquery-3.2.1.min.js"
+            type="text/javascript"></script>
+</head>
+<body>
+    <button id="btn">没点我呢</button>
+</body>
+<script type="text/javascript">
+
+    //JQuery
+    $('#btn').click(function () {
+
+//        设置元素的文本
+//        $(this).text("点了我")
+//        获得元素的文本
+        var text = $(this).text();
+        console.log(text);
+    })
+
+    //$：声明我要用jq的语法了
+    //('div')：单引号里面是选择器
+//          这里就是个标签选择器，选中所有div
+
+
+
+</script>
+</html>

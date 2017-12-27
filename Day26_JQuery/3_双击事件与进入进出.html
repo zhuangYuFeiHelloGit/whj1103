@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 20px;
+        }
+
+    </style>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            $('#btn').dblclick(function () {
+                console.log("我被双击了")
+            });
+
+//            $('div').mouseenter(function () {
+//                console.log("我进来了啊");
+//            });
+//
+//            $('div').mouseleave(function () {
+//                console.log("我出去了啊");
+//            });
+
+            //链式调用
+            $('div').mouseenter(function () {
+                console.log("我进来了啊");
+            }).mouseleave(function () {
+                console.log("我出去了啊");
+            });
+
+        })
+
+
+
+
+    </script>
+</head>
+<body>
+    <button id="btn">点我啊</button>
+
+    <div></div>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取一个JSON数组</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <button id="btn">点我获得前十名信息</button>
+    <table border="1">
+
+    </table>
+</body>
+<script type="text/javascript">
+    $('#btn').click(function () {
+
+        $('table>tr').remove();
+
+        $.get("http://localhost:8080/day16/ten",
+
+            //第一个参数：
+//            获得的数据
+//            第二个参数：
+//            访问是否成功
+            function (data,status) {
+                if(status == "success"){
+//                    console.log(data);
+
+                    //使用parseJSON方法
+                    //将data数据解析成JS中的json对象
+                    var jsonData =
+                        $.parseJSON(data);
+
+//                    console.log(jsonData[0]['score']);
+
+                    if(jsonData != null){
+                        $('table').append(
+                            $('<tr>').append(
+                                $('<td>').text("昵称")
+                            ).append(
+                                $('<td>').text("分数")
+                            )
+                        )
+                        //第一个参数index：当前的元素的角标
+                        //第二个参数data：当前的元素
+                        $.each(jsonData,function (index,obj) {
+//                        console.log(index);
+//                        console.log(obj);
+
+                            $('table').append(
+                                $('<tr>').append(
+                                    $('<td>').text(obj['nickname'])
+                                ).append(
+                                    $('<td>').text(obj['score'])
+                                )
+                            )
+                        })
+                    }
+
+                }
+        })
+    })
+</script>
+</html>

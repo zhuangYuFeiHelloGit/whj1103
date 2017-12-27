@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <link href="css/myDiv.css"
+          rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+<div></div>
+</body>
+<script type="text/javascript">
+    $('div').click(function () {
+        //第一个参数：
+//        怎么动？通过更改css样式来实现动画
+//        第二个参数：
+//        多长时间完成：毫秒值
+//        第三个参数：
+//        动画完成之后要干什么？
+//          是一个回调函数
+        $(this).animate({
+            "marginLeft": "200px"
+//            "marginLeft":"+=20px",
+//            "marginTop":"200px"
+        }, 500, function () {
+            //当动画执行完毕，会执行这个回调函数
+//            alert("动画执行完毕了");
+            $(this).animate({
+                "marginTop": "200px"
+            }, 500, function () {
+
+                $(this).animate({
+                    "marginLeft": "0"
+                }, 500, function () {
+                    $(this).animate({
+                        "marginTop": "0"
+                    }, 500)
+                })
+            })
+        })
+
+    })
+
+
+</script>
+</html>

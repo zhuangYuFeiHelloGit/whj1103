@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>区别</title>
+    <style type="text/css">
+        div {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            display: inline-block;
+            color: white;
+            font-size: 40px;
+        }
+
+        .left {
+            background-color: red;
+        }
+
+        .right {
+            background-color: green;
+        }
+
+        span {
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            margin-left: 100px;
+            display: inline-block;
+            background-color: white;
+            color: black;
+            border: solid 3px blue;
+            font-size: 40px;
+        }
+
+    </style>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+<div class="left">
+    <span id="left"></span>
+</div>
+<div class="right">
+    <span id="right"></span>
+</div>
+</body>
+<script type="text/javascript">
+
+    var left = 0;
+    var right = 0;
+
+
+    $('.left').mouseenter(function () {
+        //左侧的用来显示enter与leave
+        $('#left').text(++left);
+
+
+    }).mouseleave(function () {
+
+    });
+
+    $('.right').mouseover(function () {
+        //右侧的用来演示over与out
+        $('#right').text(++right);
+
+
+    }).mouseout(function () {
+
+    });
+
+
+</script>
+</html>
