@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作HTML</title>
+    <script type="text/javascript">
+        
+        window.onload = function () {
+            //当html文档加载完毕时
+            //会执行这个function
+            //这也是回调函数
+
+
+//            DOM       DOM4J
+//            Document Object Model
+//            文档        对象  模型
+
+
+            var show =
+                document.getElementById("show");
+
+//            show.innerText = "<span>hello js</span>";
+            show.innerHTML = "<span style='color: red'>hello js</span>";
+
+            /*
+                innerText：以纯文本显示
+                innerHTML：会识别标签，并显示
+             */
+        }
+        
+    </script>
+</head>
+<body>
+    <h1 id="show"></h1>
+</body>
+</html>

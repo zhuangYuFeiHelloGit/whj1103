@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>递归九九乘法表</title>
+    <script type="text/javascript">
+
+        function show(n) {
+            var content = "";
+            for (var i = 1; i <= n; i++) {
+                content = content + i + "*" + n + "=" + (i * n) + "\t";
+            }
+            console.log(content);
+            if (n != 9) {
+                show(n + 1);
+            }
+        }
+        show(1);
+
+        var name="张三";
+
+//        我们定义的函数，都给了window
+//        也就是说我们定义的成员变量，成员方法
+//        都变成了window的属性，方法
+    </script>
+</head>
+<body>
+
+</body>
+</html>

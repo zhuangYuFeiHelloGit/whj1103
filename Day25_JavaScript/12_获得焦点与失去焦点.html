@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>焦点</title>
+</head>
+<body>
+
+    <!--
+        onfocus：当获得焦点时
+        onblur：当失去焦点时
+    -->
+
+    <input id="username"
+           type="text"
+           onfocus="inputFocus(this)"
+           onblur="inputBlur(this)">
+    <input type="text">
+</body>
+
+<script type="text/javascript">
+
+    function inputFocus(ele) {
+//        this.style.color = "red";
+        ele.style.color = "red";
+        ele.style.fontSize = "30px";
+    }
+
+
+    function inputBlur(ele) {
+        ele.style.color = "black";
+        ele.style.fontSize = "15px";
+    }
+
+
+//    var i = new inputFocus(null);
+//    var i1 = new inputFocus(null);
+//    console.log(i.name);
+//
+//    function Student(name) {
+//
+//    }
+
+</script>
+</html>

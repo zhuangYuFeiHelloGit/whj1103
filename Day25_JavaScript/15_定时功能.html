@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 id="count">0</h1>
+
+<button id="btn"
+        onclick="start()">开始计时
+</button>
+
+<button onclick="stop()">停止计时</button>
+</body>
+<script type="text/javascript">
+
+    function time(count) {
+        //定时执行任务
+        //这里是2000毫秒后开始执行回调函数
+        setTimeout(function () {
+            count.innerText = "OK";
+        }, 2000)
+    }
+    var number;
+    var numbers = new Array();
+    function start() {
+        var count =
+            document.getElementById("count");
+
+//        time(count);
+
+        //需求，让h1计时，
+        //0 1 2 3 逐渐递增
+        var n = 0;
+        number = setInterval(function () {
+            //每隔1000毫秒，就来执行一次回调函数
+            count.innerText = (++n);
+        }, 1000);
+        numbers.push(number);
+    }
+
+
+    function stop() {
+        if(numbers.length > 0){
+            clearInterval(
+                numbers[numbers.length - 1]
+            );
+            //pop，删除数组的最后一个元素
+            numbers.pop();
+            //从哪儿开始，删几个
+//            numbers.splice(start,count)
+        }
+    }
+</script>
+</html>

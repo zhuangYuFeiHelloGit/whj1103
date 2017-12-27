@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加和删除元素</title>
+</head>
+<body>
+    <div>云想衣裳花想容</div>
+</body>
+<script type="text/javascript">
+
+    var array = [1,2,3,4];
+
+    array.a="哈哈";
+    array.b = "嘿嘿";
+
+    console.log(array.length);
+
+
+    //创建一个h1标签
+    var h1 =
+        document.createElement("h1");
+    h1.style.color = "red";
+    h1.innerText = "商女不知亡国恨，隔江犹唱后庭花";
+
+    var body =
+        document.getElementsByTagName("body");
+    body[0].appendChild(h1);
+
+    var divs =
+        document.getElementsByTagName("div");
+    //使用父元素，删除div
+    body[0].removeChild(divs[0]);
+
+//    document.appendChild(h1);
+
+
+</script>
+</html>

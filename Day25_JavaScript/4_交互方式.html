@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交互方式</title>
+    <script type="text/javascript">
+
+        //如果用户点击确定：则返回值为输入框中的内容
+        //如果用户点击取消，或按esc键，则返回值为null
+        function showPrompt(content) {
+            var result = window.prompt(content,"张三");
+            console.log(result);
+        }
+
+        //用户点击确定：true
+        //其他：false
+        function showConfirm(message) {
+            var confirm = window.confirm(message);
+            console.log(confirm);
+        }
+
+
+    </script>
+</head>
+<body>
+    <button onclick="showPrompt('请输入姓名')">点我提示</button>
+    <button onclick="showConfirm('确定退出吗？')">点我提示</button>
+</body>
+</html>

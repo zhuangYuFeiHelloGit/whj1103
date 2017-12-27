@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数</title>
+    <script type="text/javascript">
+
+
+        //若想在创建对象时，动态的指定属性的值
+//        则可以在构造方法中写参数
+        function Teacher(name,gender) {
+            //这里就和java的构造方法一样
+            this.name = name;
+            this.gender = gender;
+
+
+            this.show = function () {
+                console.log(
+                    "姓名"
+                    + this.name
+                    + "\t 性别"
+                    + this.gender);
+            }
+        }
+
+
+        var t = new Teacher("张三","男");
+
+        t.show();
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

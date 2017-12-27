@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象</title>
+
+    <script type="text/javascript">
+
+        function Student() {
+//            JS中，任意一个function
+//            都可以看成是一个构造方法
+
+//            这里将方法名大写，
+//            表示会将这个方法当做构造方法使用
+
+//            this关键字，在给Student的对象
+//            添加属性
+//            这里张三，才是Student对象的属性
+            this.name="张三";
+//            这里仅仅是在方法中定义了一个局部变量
+            var name = "李四";
+
+
+//            若要使用对象的属性或方法，则必须使用this调用
+//            否则就是在调用局部变量或方法
+
+            this.doHomework = function () {
+                console.log(this.name + "去写作业了");
+            }
+
+            function play() {
+                console.log(this.name+"去happy了！！");
+            }
+
+            //带括号的是调用方法
+            //所以是将play()的结果，
+            // 赋值给了Student对象，这是在给对象添加属性
+//            this.play = play();
+            //不带括号的，表示方法整体
+            //所以是将play方法，赋值给了Student对象，
+            //这是在给对象添加方法
+            this.play = play;
+        }
+
+        //定义一个学生对象
+        var stu = new Student();
+        stu.doHomework();
+        window.alert(stu.doHomework)
+        stu.play();
+        console.log(stu.name);
+
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
