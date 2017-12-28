@@ -12,7 +12,7 @@
     <h1 id="score"></h1>
 </body>
 <script type="text/javascript">
-    function btnClicked() {
+    function btnClic() {
         $.getJSON("http://localhost:8080/day16/first",function (jsonData) {
 //            console.log(jsonData);
             //从json对象中，取出数据
@@ -27,8 +27,17 @@
         })
     }
 
-    $('#btn').click(btnClicked);
+    var weatherApi = "http://api.k780.com/?app=weather.future&weaid=1&&appkey=29836&sign=4fe58a60443a900a251f8b05763d4622&format=json";
+    function btnClicked() {
+        $.getJSON(weatherApi,function (jsonData) {
+//            console.log(jsonData);
+            //从json对象中，取出数据
+            console.log(jsonData);
 
+        })
+    }
+
+    $('#btn').click(btnClicked);
 
 </script>
 </html>

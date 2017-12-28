@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <!--
+            给HelloServlet类，指定一个名字
+        -->
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.lanou3g.study.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <!--
+            给名字为hello的Servlet
+            添加一个路径
+            ！！！路径前面一定要加/
+        -->
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hs</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>json</servlet-name>
+        <servlet-class>com.lanou3g.study.JsonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>json</servlet-name>
+        <url-pattern>/json</url-pattern>
+    </servlet-mapping>
+</web-app>
