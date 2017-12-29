@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+    <servlet-name>insert</servlet-name>
+    <servlet-class>com.lanou3g.web.InsertServlet</servlet-class>
+</servlet>
+
+    <servlet-mapping>
+        <servlet-name>insert</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>show</servlet-name>
+        <servlet-class>com.lanou3g.web.ShowServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>show</servlet-name>
+        <url-pattern>/show</url-pattern>
+    </servlet-mapping>
+</web-app>

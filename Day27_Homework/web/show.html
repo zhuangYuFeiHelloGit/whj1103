@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>show</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <button>点我</button>
+    <table>
+        <tr>
+            <td>姓名</td>
+            <td>性别</td>
+        </tr>
+
+    </table>
+</body>
+<script type="text/javascript">
+    $('button').click(function () {
+        $.getJSON("http://localhost:8080/show",function (data, status) {
+            if(status == "success"){
+
+                $.each(data,function (index, obj) {
+
+                    var username = obj['username'];
+                    var gender = obj['gender'];
+
+                    $('table').append(
+                        $('<tr>').append(
+                            $('<td>').text(username)
+                        ).append(
+                            $('<td>').text(gender)
+                        )
+                    )
+
+
+                })
+
+
+            }
+        })
+    })
+</script>
+</html>

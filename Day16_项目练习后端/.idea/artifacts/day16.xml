@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="day16">
+    <output-path>$PROJECT_DIR$/../../../0_Work/0-Java相关/Java_War</output-path>
+    <root id="archive" name="day16.war">
+      <element id="artifact" artifact-name="Day16_项目练习后端:war exploded" />
+      <element id="module-output" name="Day16_项目练习后端" />
+    </root>
+  </artifact>
+</component>
