@@ -1,5 +1,6 @@
 package com.lanou3g.util;
 
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
@@ -22,6 +23,7 @@ public class JdbcUtil {
 			//可以用它加载一些配置文件
 			ClassLoader cl =
 					JdbcUtil.class.getClassLoader();
+
 
 			InputStream inputStream =
 					cl.getResourceAsStream("jdbc.properties");
