@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Day29" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5b193bcb-440a-49e1-86be-75eb70038223" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-beanutils-1.8.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-collections-3.2.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-lang-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-logging-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/ezmorph-1.0.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Context2Servlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ContextServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ForwardServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PracticeServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RegisterServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TargetServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../单词考试" afterPath="$PROJECT_DIR$/../单词考试" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ConfigServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ContextParamServlet.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Day29_RequestResponse_war_exploded/WEB-INF/img/girl.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/WEB-INF/img/girl.jpg" afterPath="$PROJECT_DIR$/web/img/girl.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Day29_RequestResponse_war_exploded/WEB-INF/classes/课堂笔记.txt" afterPath="$PROJECT_DIR$/out/artifacts/Day29_RequestResponse_war_exploded/WEB-INF/classes/课堂笔记.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Day29_RequestResponse_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/Day29_RequestResponse_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Day29_RequestResponse/课堂笔记.txt" afterPath="$PROJECT_DIR$/out/production/Day29_RequestResponse/课堂笔记.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/课堂笔记.txt" afterPath="$PROJECT_DIR$/src/课堂笔记.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -32,21 +33,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PracticeServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PracticeServlet.java">
+      <file leaf-file-name="课堂笔记.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/课堂笔记.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="4752">
+              <caret line="99" column="38" lean-forward="false" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="课堂笔记.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/课堂笔记.txt">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="86" column="4" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+            <state relative-caret-position="288">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContextParamServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ContextParamServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -73,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/error.html" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/login.html" />
@@ -88,6 +98,9 @@
         <option value="$PROJECT_DIR$/src/Context2Servlet.java" />
         <option value="$PROJECT_DIR$/src/PracticeServlet.java" />
         <option value="$PROJECT_DIR$/src/课堂笔记.txt" />
+        <option value="$PROJECT_DIR$/src/ConfigServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/ContextParamServlet.java" />
       </list>
     </option>
   </component>
@@ -108,7 +121,7 @@
     <option name="x" value="40" />
     <option name="y" value="23" />
     <option name="width" value="1240" />
-    <option name="height" value="1001" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -164,6 +177,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Day29_RequestResponse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Day29_RequestResponse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -176,7 +207,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -192,6 +223,7 @@
       <recent name="$PROJECT_DIR$/web/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -615,15 +647,16 @@
       <option name="presentableId" value="Default" />
       <updated>1514855591543</updated>
       <workItem from="1514855593617" duration="8521000" />
-      <workItem from="1514865506636" duration="10254000" />
+      <workItem from="1514865506636" duration="12483000" />
+      <workItem from="1514905998666" duration="452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18775000" />
+    <option name="totallyTimeSpent" value="21456000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1240" height="1001" extended-state="0" />
+    <frame x="40" y="23" width="1240" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -633,27 +666,27 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.669967" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19449082" sideWeight="0.46974698" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19449082" sideWeight="0.53025305" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19449082" sideWeight="0.46094608" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19449082" sideWeight="0.5390539" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.669967" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -674,6 +707,30 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/课堂笔记.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4752">
+          <caret line="99" column="38" lean-forward="false" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContextParamServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PicServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -684,7 +741,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/img/girl.jpg">
+    <entry file="file://$PROJECT_DIR$/web/img/girl.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -693,14 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2160">
           <caret line="72" column="18" lean-forward="false" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,11 +815,6 @@
             <element signature="imports" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/img/girl.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LoginServlet.java">
@@ -865,10 +908,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/girl.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/课堂笔记.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="86" column="4" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+        <state relative-caret-position="4752">
+          <caret line="99" column="38" lean-forward="false" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConfigServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContextParamServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -879,7 +951,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Day29_RequestResponse:war exploded</last-edited>
+          <last-edited>Day29</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -84,7 +84,20 @@
     当Tomcat关闭时，会将ServletContext销毁。
 
     所以ServletContext的生命周期最长。
-    
+
+10，初始化参数
+    全局参数：当应用启动时，就已经被设置好的内容，
+        全局参数需要在web.xml中配置
+        因为是全局的，所以每个Servlet都能得到
+
+    局部参数：
+        为每个Servlet单独配置的初始化参数
+
+    ServletConfig
+        在web.xml中，对每个Servlet的配置，
+        都会被抽象成一个ServletConfig对象
+        在AServlet中获得ServletConfig，则这个
+    ServletConfig中的内容就都是AServlet的配置信息。
 
 
 
