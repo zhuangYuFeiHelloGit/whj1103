@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="bookstore">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="classmanager"/>
+    <schema id="4" parent="1" name="customers"/>
+    <schema id="5" parent="1" name="day16"/>
+    <schema id="6" parent="1" name="day18"/>
+    <schema id="7" parent="1" name="day19"/>
+    <schema id="8" parent="1" name="day27"/>
+    <schema id="9" parent="1" name="day3"/>
+    <schema id="10" parent="1" name="demo"/>
+    <schema id="11" parent="1" name="hbue"/>
+    <schema id="12" parent="1" name="hibernate"/>
+    <schema id="13" parent="1" name="homework12"/>
+    <schema id="14" parent="1" name="hw_sql"/>
+    <schema id="15" parent="1" name="information_schema"/>
+    <schema id="16" parent="1" name="jdbc"/>
+    <schema id="17" parent="1" name="jdfull"/>
+    <schema id="18" parent="1" name="mysql"/>
+    <schema id="19" parent="1" name="northwind"/>
+    <schema id="20" parent="1" name="outkey"/>
+    <schema id="21" parent="1" name="page"/>
+    <schema id="22" parent="1" name="performance_schema"/>
+    <schema id="23" parent="1" name="preh01"/>
+    <schema id="24" parent="1" name="PreH02"/>
+    <schema id="25" parent="1" name="proceduredemo"/>
+    <schema id="26" parent="1" name="querymany"/>
+    <schema id="27" parent="1" name="s2"/>
+    <schema id="28" parent="1" name="share"/>
+    <schema id="29" parent="1" name="struts2"/>
+    <schema id="30" parent="1" name="student"/>
+    <schema id="31" parent="1" name="study"/>
+    <schema id="32" parent="1" name="t"/>
+    <schema id="33" parent="1" name="transaction"/>
+    <schema id="34" parent="1" name="day29">
+      <Visible>1</Visible>
+    </schema>
+    <table id="35" parent="2" name="admin"/>
+    <table id="36" parent="2" name="book"/>
+    <table id="37" parent="2" name="category"/>
+    <table id="38" parent="2" name="orderitem"/>
+    <table id="39" parent="2" name="orders"/>
+    <table id="40" parent="2" name="tb_user"/>
+    <table id="41" parent="34" name="user"/>
+    <column id="42" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>char(32)|0</DataType>
+    </column>
+    <column id="43" parent="35" name="name">
+      <Position>2</Position>
+      <DataType>char(32)|0</DataType>
+    </column>
+    <column id="44" parent="35" name="password">
+      <Position>3</Position>
+      <DataType>char(32)|0</DataType>
+    </column>
+    <column id="45" parent="36" name="bid">
+      <Position>1</Position>
+      <DataType>char(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="36" name="bname">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="47" parent="36" name="price">
+      <Position>3</Position>
+      <DataType>decimal(5,1)|0</DataType>
+    </column>
+    <column id="48" parent="36" name="author">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="49" parent="36" name="image">
+      <Position>5</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="50" parent="36" name="cid">
+      <Position>6</Position>
+      <DataType>char(32)|0</DataType>
+    </column>
+    <index id="51" parent="36" name="cid">
+      <ColNames>cid</ColNames>
+    </index>
+    <key id="52" parent="36" name="PRIMARY">
+      <ColNames>bid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="53" parent="36" name="book_ibfk_1">
+      <ColNames>cid</ColNames>
+      <RefSchemaName>bookstore</RefSchemaName>
+      <RefTableName>category</RefTableName>
+      <RefColNames>cid</RefColNames>
+    </foreign-key>
+    <column id="54" parent="37" name="cid">
+      <Position>1</Position>
+      <DataType>char(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="37" name="cname">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="56" parent="37" name="PRIMARY">
+      <ColNames>cid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="57" parent="38" name="iid">
+      <Position>1</Position>
+      <DataType>char(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="38" name="count">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="59" parent="38" name="subtotal">
+      <Position>3</Position>
+      <DataType>decimal(10,2)|0</DataType>
+    </column>
+    <column id="60" parent="38" name="oid">
+      <Position>4</Position>
+      <DataType>char(32)|0</DataType>
+    </column>
+    <column id="61" parent="38" name="bid">
+      <Position>5</Position>
+      <DataType>char(32)|0</DataType>
+    </column>
+    <index id="62" parent="38" name="bid">
+      <ColNames>bid</ColNames>
+    </index>
+    <index id="63" parent="38" name="oid">
+      <ColNames>oid</ColNames>
+    </index>
+    <key id="64" parent="38" name="PRIMARY">
+      <ColNames>iid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="65" parent="38" name="orderitem_ibfk_1">
+      <ColNames>oid</ColNames>
+      <RefSchemaName>bookstore</RefSchemaName>
+      <RefTableName>orders</RefTableName>
+      <RefColNames>oid</RefColNames>
+    </foreign-key>
+    <foreign-key id="66" parent="38" name="orderitem_ibfk_2">
+      <ColNames>bid</ColNames>
+      <RefSchemaName>bookstore</RefSchemaName>
+      <RefTableName>book</RefTableName>
+      <RefColNames>bid</RefColNames>
+    </foreign-key>
+    <column id="67" parent="39" name="oid">
+      <Position>1</Position>
+      <DataType>char(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="39" name="ordertime">
+      <Position>2</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="69" parent="39" name="total">
+      <Position>3</Position>
+      <DataType>decimal(10,2)|0</DataType>
+    </column>
+    <column id="70" parent="39" name="state">
+      <Position>4</Position>
+      <DataType>smallint(1)|0</DataType>
+    </column>
+    <column id="71" parent="39" name="uid">
+      <Position>5</Position>
+      <DataType>char(32)|0</DataType>
+    </column>
+    <column id="72" parent="39" name="address">
+      <Position>6</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <index id="73" parent="39" name="uid">
+      <ColNames>uid</ColNames>
+    </index>
+    <key id="74" parent="39" name="PRIMARY">
+      <ColNames>oid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="75" parent="39" name="orders_ibfk_1">
+      <ColNames>uid</ColNames>
+      <RefSchemaName>bookstore</RefSchemaName>
+      <RefTableName>tb_user</RefTableName>
+      <RefColNames>uid</RefColNames>
+    </foreign-key>
+    <column id="76" parent="40" name="uid">
+      <Position>1</Position>
+      <DataType>char(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="40" name="username">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="40" name="password">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="79" parent="40" name="email">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="40" name="code">
+      <Position>5</Position>
+      <DataType>char(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="81" parent="40" name="state">
+      <Position>6</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <key id="82" parent="40" name="PRIMARY">
+      <ColNames>uid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="83" parent="41" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="84" parent="41" name="password">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="41" name="username">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="86" parent="41" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
