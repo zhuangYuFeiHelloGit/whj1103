@@ -102,3 +102,10 @@ parse 解析
 request 请求
 response 响应
 redirect 重定向
+
+property 属性
+scope 域；范围
+
+employee 员工
+salary 工资
+

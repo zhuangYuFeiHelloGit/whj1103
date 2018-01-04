@@ -35,6 +35,8 @@ public class LoginServlet extends HttpServlet {
 
 			User u = userDao.queryByUsername(user.getUsername());
 
+
+
 			if(user.getUsername().equals(u.getUsername())){
 				if(user.getPassword().equals(u.getPassword())){
 						//成功
@@ -43,9 +45,9 @@ public class LoginServlet extends HttpServlet {
 						//存到ServletContext中
 						getServletContext().setAttribute("user",user);
 
-						request.getRequestDispatcher("/index.jsp")
-								.forward(request,response);
-
+//						request.getRequestDispatcher("/index.jsp")
+//								.forward(request,response);
+						response.sendRedirect("/day29/index");
 						return;
 
 

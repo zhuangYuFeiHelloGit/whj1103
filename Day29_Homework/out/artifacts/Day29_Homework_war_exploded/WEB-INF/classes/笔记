@@ -1,0 +1,15 @@
+1，关于war包的问题
+    如果修改了项目内容，则需要重新生成war包并将
+    新的war包部署到tomcat/webapps目录下
+    部署的时候，先关闭tomcat，赋值好war包后
+    再重新启动tomcat
+    tomcat会自动根据war包生成对应的文件夹
+    里面装的都是.class文件和各种配置文件，
+    html等等
+
+2，路径问题
+    request.getContextPath()得到的就是项目名
+3，如何打开别人的web工程
+    1，更改jar包，就是tomcat自带的那个jar包
+    2，更改tomcat的路径
+    3，要注意数据库

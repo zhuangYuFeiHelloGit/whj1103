@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * Created by zyf on 2018/1/3.
  */
-@WebServlet(name = "RegisterServlet",urlPatterns = "/register")
+@WebServlet(name = "RegisterServlet", urlPatterns = "/register")
 public class RegisterServlet extends HttpServlet {
 	private UserDao userDao = new UserDao();
 
@@ -25,24 +25,20 @@ public class RegisterServlet extends HttpServlet {
 		Map<String, String[]> parameterMap =
 				request.getParameterMap();
 		try {
-			BeanUtils.populate(user,parameterMap);
+			BeanUtils.populate(user, parameterMap);
 			String formName = user.getUsername();
 			User fromDb = userDao.queryByUsername(formName);
 
-			if(fromDb != null){
+			if (fromDb != null) {
 				//说明已经注册了
 				response.sendRedirect("/day29/register.html");
 
 				return;
 			}
-
-			if(userDao.queryByUsername(
-					user.getUsername()
-			).getUsername() == null)
-
 			userDao.insert(user);
 
 			response.sendRedirect("/day29/login.html");
+
 
 
 		} catch (IllegalAccessException e) {
