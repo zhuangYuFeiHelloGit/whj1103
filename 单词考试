@@ -1,5 +1,5 @@
-import 导入
-array 数组
+import 导入 
+array 数组	
 Scanner	
 console 控制台
 continue 继续
@@ -109,3 +109,6 @@ scope 域；范围
 employee 员工
 salary 工资
 
+
+
+Standard  标准

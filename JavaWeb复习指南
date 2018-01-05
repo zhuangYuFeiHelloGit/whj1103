@@ -1,0 +1,206 @@
+1，JS
+	var 
+	window document
+	对象是事物的抽象
+	document.getElementById(id);
+	var array = document.getElementByTagName(tagName);
+
+	var a = {1,2,3,4,5};
+	a.name = "张安";
+	a.age = 19;
+	console.log(a.length());
+	a.play = function(){
+
+	}
+
+2，JQuery
+	链式调用
+	$("选择器").action
+	.click(function(){
+
+	})
+	.text();
+	.text("文本内容");
+	.attr("class");//获得class属性
+	.attr({"class":"ddd"})//设置class为ddd
+	.animate({"marginLeft":"+=20px"},1000,function(){
+		//当动画执行结束时的回调函数
+	})
+
+	.css({})
+	.html("<h1>哈哈哈</h1>");
+
+	//在标签内部添加子标签
+	.append(
+		$("<p>")//创建一个p标签
+	);
+	.after()//在后面添加
+	.before()//在前面添加
+
+	.remove();//不写参数，要移除谁，就让谁调用
+
+
+	$.get();
+	$.getJSON("路径",function(data,status){
+		if(status=="success"){
+			var name = data['name'];
+			//如果是个数组
+			var jobj = data[0];
+		}
+	})
+
+3，Servlet
+	接口		Servlet
+	实现类 	GenericServlet
+	实现类的子类 HttpServlet
+
+	web.xml中配置
+		添加全局初始化参数
+		----ServletContext
+
+		可以为每个Servlet单独配置初始化参数
+		----ServletConfig
+
+	用注解创建Servlet
+
+	生命周期：init，service，destroy
+
+4，Request和Response
+	一次请求的所有内容，都被封装到了Request对象中
+
+	ServletRequest和HttpServletRequest
+	两个都是接口
+
+	获取请求参数
+
+	doGet和doPost
+	get：地址栏直接输入	超链接标签
+		请求转发
+	post：表单
+
+	response：
+		响应文本，响应图片
+
+		getServletContext.getResourceAsStream("相对应web文件夹的路径");
+
+		IOUtils.toByte(inputStream);
+
+5，编码问题：
+	请求编码和响应编码
+
+	Tomcat 8 
+	把默认的编码方式由ISO8859-1改成了UTF-8
+
+	获取请求参数的解决方式：
+		request.setCharsetEncoding();
+
+	响应编码的解决方式：
+		response.setContentType(
+			"text/html;charset=utf-8"
+		)
+
+6，重定向和请求转发/包含
+	重定向与请求转发的区别：
+		地址栏变化
+		请求次数
+		范围
+		路径
+		效率
+	转发与包含的区别：
+		转发：只有最后一个资源可以响应
+		包含：都可以响应
+
+7，域对象
+	Request域：表示一次请求
+	ServletContext域：表示这个工程
+	Session：表示一次会话
+		当用户访问网站，到用户关闭浏览器
+
+		JSESSIONID保存再Cookie中，存在浏览器
+		而这个Cookie的生命周期，就是到浏览器被关闭
+	Cookie：就是服务器保存到浏览器的一个键值对
+		只不过Cookie类型的对象还有其他的属性
+	maxAge：存在时长，秒
+	path：只有符合了path，才会被带给服务器
+
+	response.addHeader("Set-Cookie","aa=AA");
+	response.addCookie(new Cookie("name","value"));
+
+	Servlet中获得Session：
+		request.getSession();
+	JSP中获得Session:
+		是内置对象
+
+8，JSP基础
+	JSP就是一个Servlet
+	JSP有九大内置对象。
+	特殊的两个：
+		PageContext
+		Exception
+
+	三种已经被淘汰的JSP语法
+	<%%>
+	<%=%>
+	<%!%>
+	JSP2.0后就不让用了
+
+	EL表达式：<%@taglib>
+		可以实现全域查找
+	${}:大括号里面，填入变量名，会去四个域中查找域属性
+
+	<input value="${name}"/>
+
+	EL运算符
+
+	EL函数
+
+	自定义EL函数
+
+9，JSTL标签库
+	page
+	taglib
+	include：
+		静态包含
+	<jsp:include>动态包含
+
+	静态包含与动态包含的区别：
+
+	六个标签
+	set if foreach out url remove
+
+	<a href="<c:url>"></a>
+
+10，MVC模式
+	web
+	service
+	dao data access object
+	util
+	domain 放的就是javabean
+
+	单一职责原则
+	开闭原则
+
+11，BaseServlet
+	反射
+	父类方法中的this到底是谁
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

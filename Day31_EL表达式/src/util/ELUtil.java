@@ -17,7 +17,6 @@ public class ELUtil {
 		String behind = input.substring(0,input.length() - 1);
 		String last = input.charAt(input.length() - 1) + "";
 
-
 		return last+reverse(behind);
 	}
 

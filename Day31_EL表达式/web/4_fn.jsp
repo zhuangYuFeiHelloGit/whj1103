@@ -22,5 +22,7 @@
     --%>
     ${fn:endsWith(param.str, "e")}
     ${lanou3g:reverse("abcde")}
+
+    <input type="text" value="${name}">
 </body>
 </html>
