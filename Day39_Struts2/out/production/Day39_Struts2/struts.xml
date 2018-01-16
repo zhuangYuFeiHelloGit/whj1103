@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <!--
+        后缀名可以是：
+            zh，en
+            也可以没有后缀名
+    -->
+    <constant name="struts.action.extension"
+              value="zh,"/>
+
+    <!--
+        开发者模式：
+            使得程序员不会因为更改struts.xml
+            而频繁的重启服务器
+    -->
+    <constant name="struts.devMode" value="true"/>
+
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+
+
+
+    <!--
+        java类与类之间，通过包来区分
+        这里，action与action之间，通过package标签区分
+
+        name：包的名字
+        extends：这个包继承哪个包
+            我们自定义的可以使用的package
+            一定都会直接或间接的继承struts-default
+    -->
+    <package name="day39"
+             extends="struts-default"
+             namespace="/">
+
+        <!--
+            指定默认的类
+        -->
+        <default-class-ref class="DefaultAction"/>
+
+        <action name="goodbye"
+                class="HelloAction">
+            <result name="success">hello.jsp</result>
+        </action>
+
+        <action name="show">
+            <result name="success">hello.jsp</result>
+        </action>
+
+        <!--
+            normal_hello
+            使用通配符作为action的路径
+            可以扩展方法的结果视图
+            也就是将第一个*所代表的方法
+            与第二个*所代表的结果视图
+
+            各种拼凑
+
+            在name中定义的*
+            在后续的使用中，使用方式为{n}
+            n就表示name中的第几个*
+        -->
+        <action name="*_*"
+                class="NormalAction"
+                method="{1}">
+            <result name="success">{2}.jsp</result>
+            <allowed-methods>normal,special</allowed-methods>
+        </action>
+
+        <action name="api"
+                class="servletapi.ApiAction"
+                method="api">
+            <result name="success">success.jsp</result>
+        </action>
+        <action name="api2"
+                class="servletapi.ApiAction2"
+                method="api2">
+            <result name="success">success.jsp</result>
+        </action>
+
+    </package>
+
+
+
+    <!--将user.xml文件导入进来-->
+    <include file="user.xml"/>
+</struts>

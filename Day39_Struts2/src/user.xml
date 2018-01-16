@@ -1,0 +1,38 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+    <package name="user"
+             extends="struts-default"
+                namespace="/user">
+
+        <action name="add"
+                class="UserAction"
+                method="add">
+            <result name="add">add.jsp</result>
+        </action>
+
+        <!--
+            删改查
+        -->
+
+        <action name="del"
+                class="UserAction"
+                method="del">
+            <result name="del">del.jsp</result>
+        </action>
+        <action name="update"
+                class="UserAction"
+                method="update">
+            <result name="update">update.jsp</result>
+        </action>
+        <action name="query"
+                class="UserAction"
+                method="query">
+            <result name="query">query.jsp</result>
+        </action>
+
+    </package>
+
+</struts>
