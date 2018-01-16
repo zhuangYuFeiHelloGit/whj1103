@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="VerifyCode">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/VerifyCode.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

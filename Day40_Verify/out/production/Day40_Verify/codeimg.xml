@@ -1,0 +1,24 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+
+    <package name="code"
+             extends="struts-default">
+        <!--
+            若想使用自己定义的结果视图类型
+            需要使用如下标签，声明
+        -->
+        <result-types>
+            <result-type name="codeimg"
+                         class="result.CodeImgResult"/>
+        </result-types>
+
+
+        <action name="codeImg"
+                class="action.CodeImgAction">
+            <result name="success" type="codeimg"/>
+        </action>
+    </package>
+</struts>

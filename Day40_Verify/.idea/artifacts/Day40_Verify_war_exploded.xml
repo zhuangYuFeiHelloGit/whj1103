@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Day40_Verify:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Day40_Verify_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Day40_Verify/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Day40_Verify" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Struts 2" />
+          <element id="library" level="project" name="VerifyCode" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

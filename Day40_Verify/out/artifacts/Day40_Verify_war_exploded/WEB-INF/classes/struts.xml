@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="my-global"
+             extends="struts-default"
+             abstract="true">
+        <!--
+           当action中，找不到name属性为show的
+           result标签时
+           会到这个全局结果里找
+           找到了就显示对应的页面
+       -->
+        <global-results>
+            <result name="show">show.jsp</result>
+        </global-results>
+    </package>
+
+
+    <package name="global"
+             extends="my-global"
+            namespace="/global">
+
+        <action name="gr"
+                class="action.GlobalResultAction"
+                method="show">
+            <result name="success">success.jsp</result>
+
+        </action>
+
+    </package>
+
+
+
+    <include file="result.xml"/>
+
+    <include file="codeimg.xml"/>
+
+    <include file="param.xml"/>
+</struts>

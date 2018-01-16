@@ -1,0 +1,10 @@
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.dtd">
+<validators>
+    <field name="name">
+        <field-validator type="required">
+            <message>错了错了错了</message>
+        </field-validator>
+    </field>
+</validators>

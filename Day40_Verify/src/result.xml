@@ -1,0 +1,37 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="result"
+             extends="struts-default"
+             namespace="/result">
+
+        <action name="plaintext"
+                class="action.ResultAction"
+                method="plaintext">
+            <result name="success" type="plainText">
+                show.jsp
+            </result>
+        </action>
+
+        <action name="chain"
+                class="action.ResultAction"
+                method="toGlobalGR">
+            <result name="success"
+                    type="chain">
+                <!--对于转发到不同包的Action-->
+                <!--因为包与包之间的命名空间不同-->
+                <!--所以需要在result标签中-->
+                <!--通过param子标签，拼接信息-->
+                <!--注意命名空间一定以/开头-->
+                <param name="namespace">/global</param>
+                <param name="actionName">gr</param>
+            </result>
+            <!--对于同包的，
+                直接在result标签体中书写action名称即可-->
+            <result name="plain"
+                    type="chain">plaintext</result>
+        </action>
+
+    </package>
+</struts>

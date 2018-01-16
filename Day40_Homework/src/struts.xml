@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="user"
+             extends="struts-default"
+                namespace="/user">
+        <action name="login"
+                class="com.lanou3g.homework.action.UserAction"
+                method="login">
+            <result name="success">success.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="register"
+                class="com.lanou3g.homework.action.UserAction"
+                method="register">
+            <result name="success">success.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+
+    </package>
+</struts>
