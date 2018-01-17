@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.ognl.allowStaticMethodAccess"
+              value="true"/>
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="stack"
+             extends="struts-default"
+             >
+
+        <interceptors>
+            <interceptor
+                    name="login"
+                    class="com.lanou3g.interceptor.LoginStatusInterceptor">
+                <!--
+                    在声明拦截器的地方，可以使用
+                        包含
+                        排除
+                        两个子标签
+                -->
+                <param name="excludeMethods">login</param>
+            </interceptor>
+
+            <interceptor-stack name="my-stack">
+                <!--
+                    将login这个拦截器，
+                    添加到我们自己的这个栈中
+                -->
+                <interceptor-ref name="login"/>
+                <!--
+                    将默认的拦截器，添加到我们自己的栈中
+                -->
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>
+
+        <!--定义了一个默认的拦截器-->
+        <default-interceptor-ref name="my-stack"/>
+
+        <action name="stack"
+                class="com.lanou3g.action.StackAction">
+
+            <!--
+                如果自己自定了拦截器
+                那么默认的拦截器，就都不好使了
+                也就相当于将默认的interceptor-ref属性覆盖了
+
+                如何才能既使用自己的，也能使用默认的？
+            -->
+            <!--<interceptor-ref name="my-stack"/>-->
+
+            <result name="success">index.jsp</result>
+        </action>
+        
+        <action name="add"
+                method="add"
+                class="com.lanou3g.action.LoginAction">
+            <result name="login">login.jsp</result>
+            <result name="add">success.jsp</result>
+
+        </action>
+
+        <action name="update"
+                method="update"
+                class="com.lanou3g.action.LoginAction">
+            <result name="login">login.jsp</result>
+            <result name="update">success.jsp</result>
+        </action>
+        <action name="login"
+                method="login"
+                class="com.lanou3g.action.LoginAction">
+            <result name="success">success.jsp</result>
+
+        </action>
+
+    </package>
+
+    <package name="down"
+             extends="struts-default">
+        <action name="down"
+                class="com.lanou3g.action.DownloadAction"
+                method="down">
+            <!--标签体中，就是要返回的流的名字-->
+            <!--这个名字要与DownloadAction中的成员变量一致-->
+            <!--会通过getter方法得到-->
+            <result name="success" type="stream">
+
+                <!--指定输入流的名字-->
+                <param name="inputName">stream</param>
+
+                <param name="contentDisposition">attachment;filename=${filename}</param>
+
+                <param name="contentType">application/octet-stream</param>
+            </result>
+
+        </action>
+    </package>
+
+
+    <include file="ognl.xml"/>
+
+</struts>

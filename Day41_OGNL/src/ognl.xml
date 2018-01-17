@@ -1,0 +1,58 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="ognl"
+             extends="struts-default">
+        <action name="hello"
+                class="com.lanou3g.action.OgnlAction"
+                method="hello">
+            <result name="success">ognl.jsp</result>
+        </action>
+    </package>
+
+    <package name="context"
+             extends="struts-default">
+        <default-class-ref class="com.lanou3g.action.OgnlAction"/>
+
+        <global-results>
+            <result name="success">index.jsp</result>
+        </global-results>
+
+
+        <action name="context"
+                class="com.lanou3g.action.ContextAction"
+                method="context"/>
+        <action name="value"
+                class="com.lanou3g.action.ContextAction"
+                method="value"/>
+        <action name="vs"
+                class="com.lanou3g.action.ContextAction"
+                method="vs">
+            <result name="success" type="chain">target</result>
+        </action>
+
+        <action name="target"
+                class="com.lanou3g.action.TargetAction"
+                method="target"/>
+
+        <action name="vss"
+                class="com.lanou3g.action.ContextAction"
+                method="vss"/>
+
+        <action name="show"
+                method="show">
+            <result name="success">ognl.jsp</result>
+        </action>
+        <action name="el"
+                method="el">
+            <result name="success">ognl.jsp</result>
+        </action>
+
+        <action name="books"
+                class="com.lanou3g.action.BookAction"
+                method="books">
+            <result name="success">books.jsp</result>
+        </action>
+    </package>
+</struts>
