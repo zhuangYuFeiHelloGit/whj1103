@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<!-- 配置文件的根元素 -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- 数据库连接配置 -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/hibernate02</property>
+        <!-- 数据库驱动配置 -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!-- 数据库用户配置 -->
+        <property name="connection.username">root</property>
+        <property name="connection.password">123</property>
+        <!-- 连接池配置 -->
+        <!-- DB schema will be updated if needed -->
+        <property name="hbm2ddl.auto">update</property>
+        <!-- 方言配置 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!-- 是否显示Hibernate执行的sql语句 -->
+        <property name="hibernate.show_sql">true</property>
+        <!-- 是否将sql语句格式化 -->
+        <property name="hibernate.format_sql">true</property>
+
+        <!--
+            只有给出如下配置，
+            才能使用getCurrentSession方法
+        -->
+        <property name="current_session_context_class">thread</property>
+
+
+        <!--
+            开启二级缓存
+        -->
+        <property name="cache.use_second_level_cache">true</property>
+
+        <property name="hibernate.cache.region.factory_class">
+            org.hibernate.cache.ehcache.EhCacheRegionFactory
+        </property>
+        <!--
+            开启二级缓存的统计机制
+            可以获得含有多少数据
+        -->
+        <property name="generate_statistics">true</property>
+
+        <!--
+            开启查询缓存
+        -->
+        <property name="hibernate.cache.use_query_cache">true</property>
+
+        <mapping resource="com/lanou3g/bean/Clazz.hbm.xml"/>
+        <mapping resource="com/lanou3g/bean/Student.hbm.xml"/>
+        <mapping resource="com/lanou3g/bean/onetoone/Husband.hbm.xml"/>
+        <mapping resource="com/lanou3g/bean/onetoone/Wife.hbm.xml"/>
+        <mapping resource="com/lanou3g/bean/manytomany/Role.hbm.xml"/>
+        <mapping resource="com/lanou3g/bean/manytomany/User.hbm.xml"/>
+
+        <class-cache class="com.lanou3g.bean.Clazz"
+                     usage="read-write"/>
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="user"
+          class="com.lanou.createobj.User">
+        <property
+                name="name"
+                value="哈哈哈哈哈"/>
+        <property
+                name="age"
+                value="20"/>
+        <property
+                name="login"
+                value="true"/>
+
+    </bean>
+
+    <bean id="user2" class="com.lanou.createobj.User">
+        <!--
+            使用如下标签，给构造方法的参数传值
+            有三种传递方式：
+                1，根据参数名传值
+                2，根据参数在参数列表中的角标传值
+                3，根据参数类型传值
+        -->
+        <constructor-arg name="name"
+                         value="李大奔"/>
+        <constructor-arg index="1" value="2"/>
+        <constructor-arg type="java.lang.Boolean"
+                         value="true"/>
+    </bean>
+
+
+    <bean id="staticFactory"
+          class="com.lanou.factory.StaticFactory"
+          factory-method="getInstance"/>
+
+    <!--
+        先创建一个UserFactory对象
+    -->
+    <bean id="fact"
+          class="com.lanou.factory.UserFactory"/>
+
+    <!--
+        指定user3，由哪个工厂创建：fact
+    -->
+    <bean id="user3"
+          class="com.lanou.createobj.User"
+          factory-bean="fact"
+          factory-method="getInstance"/>
+
+
+</beans>

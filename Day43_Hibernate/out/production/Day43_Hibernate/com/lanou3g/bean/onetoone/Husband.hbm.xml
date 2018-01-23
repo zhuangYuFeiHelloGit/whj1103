@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.lanou3g.bean.onetoone.Husband" table="husband" schema="hibernate02">
+        <id name="hid">
+            <column name="hid" sql-type="int(11)"/>
+            <generator class="increment"/>
+        </id>
+        <property name="hname">
+            <column name="hname" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+
+        <one-to-one name="wife"
+                    cascade="all"
+                    constrained="true"
+                    class="com.lanou3g.bean.onetoone.Wife"/>
+    </class>
+</hibernate-mapping>

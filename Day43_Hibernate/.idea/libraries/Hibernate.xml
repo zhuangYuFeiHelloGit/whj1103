@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Hibernate" type="hibernate">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/required/antlr-2.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/required/classmate-1.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/required/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/required/geronimo-jta_1.1_spec-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/required/hibernate-commons-annotations-5.0.1.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/required/hibernate-core-5.1.5.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/required/hibernate-jpa-2.1-api-1.0.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/required/jandex-2.0.3.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/required/javassist-3.20.0-GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/required/jboss-logging-3.3.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/jar/mysql-connector-java-5.1.18-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/ehcache/ehcache-2.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/ehcache/hibernate-ehcache-5.1.5.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Hibernate/xr/ehcache/slf4j-api-1.7.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

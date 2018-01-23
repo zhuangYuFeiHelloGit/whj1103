@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.lanou3g.bean.manytomany.User"
+            table="user">
+        <id name="uid">
+            <generator class="uuid"/>
+        </id>
+        <property name="uname"/>
+        <set name="roles"
+                cascade="all">
+            <key column="rid"/>
+            <many-to-many
+                    class="com.lanou3g.bean.manytomany.Role"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Spring" type="spring">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Spring/core/spring-aop-4.3.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Spring/core/spring-beans-4.3.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Spring/core/spring-context-4.3.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Spring/core/spring-core-4.3.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Spring/core/spring-expression-4.3.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Spring/core/commons-logging-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

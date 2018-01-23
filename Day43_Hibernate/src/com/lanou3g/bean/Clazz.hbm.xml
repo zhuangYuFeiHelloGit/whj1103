@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.lanou3g.bean.Clazz" table="clazz" schema="hibernate02">
+        <id name="cid">
+            <column name="cid" sql-type="int(11)"/>
+            <generator class="increment"/>
+        </id>
+        <property name="cname">
+            <column name="cname" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+
+        <set name="students"
+                cascade="save-update"
+                inverse="true">
+            <!--
+                inverse：
+                    谷歌翻译：逆
+                inverse=false是默认的===》没逆
+
+                class ==== student
+                当前          逆
+                一对多关系中
+                一的逆就是多
+                默认情况下，没逆，说明就是一
+
+                谁来维护关系
+                    默认的时候是，一来维护
+                    inverse=true，一的逆是多
+                        说明是多来维护
+
+                    维护的到底是什么啊？
+                        就是在多那一方的外键
+                因为：
+                    student表与clazz表之间的关系
+                    就是由student表中的外键来建立起来的
+
+                    所以在Hibernate中，维护一，多中
+                    两个类之间的关系时，实际上就是在维护
+                    在多那一方的类中对应外键的属性
+
+            -->
+
+            <!--
+                cascade：级联操作
+                值：save-update：
+                    在保存或更新班级时也同时保存或更新学生
+                    一般不会设置为all
+                    总不能班级没了，学生也没了吧？
+            -->
+
+            <!--
+                key标签：
+                    属性column：
+                        这里填多的那一方中的外键
+            -->
+            <key column="ccc"/>
+
+            <!--
+                set标签：指定Clazz中类型为set集合的属性
+                one-to-many标签：
+                        表示这个集合是一对多关系的
+                        一个集合对应多个元素
+                        这么这个多指的是谁？
+                        由class属性指定
+            -->
+            <one-to-many
+                    class="com.lanou3g.bean.Student"
+                    />
+        </set>
+    </class>
+</hibernate-mapping>

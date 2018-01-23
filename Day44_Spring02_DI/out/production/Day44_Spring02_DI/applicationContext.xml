@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="car"
+          class="com.lanou.di.Car">
+        <constructor-arg name="name"
+                         value="辉腾"/>
+    </bean>
+
+    <bean id="per"
+          class="com.lanou.di.Person">
+        <constructor-arg name="name"
+                         value="PGOne"/>
+        <!--
+
+        -->
+        <constructor-arg name="car"
+                         ref="car"/>
+
+    </bean>
+
+
+</beans>

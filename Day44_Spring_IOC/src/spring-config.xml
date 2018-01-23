@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        在配置文件中，指定方法
+    -->
+    <bean id="per"
+          class="com.lanou.lifecycle.Person"
+          init-method="init"
+          destroy-method="destroy"/>
+
+    <!--
+        singleton：单例
+        prototype：多例
+
+        在singleton模式下
+        指定lazy-init属性为true
+        则只有调用了context.getBean("car")
+        时，才会创建一个Car类的对象，
+    -->
+    <bean id="car"
+          class="com.lanou.scope.Car"
+          scope="singleton" lazy-init="true"/>
+
+    <!--
+        scope：prototype 多例
+        则不会在Spring启动时创建Student对象
+        而是在调用getBean时才创建
+
+        并且，可以创建多个
+
+        对应name属性和id属性：
+            name：可以使用,分割多个名称
+            id：认为,也是id的一部分
+                所以应该：getBean("stu,yyy")
+                而：getBean("stu")和
+                getBean("yyy")都是错的
+    -->
+    <bean id="stu,yyy"
+          name="student,xxx"
+          class="com.lanou.scope.Student"
+          scope="prototype"/>
+    <alias name="student" alias="student2"/>
+</beans>

@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.lanou3g.bean.Student"
+            table="student">
+        <id name="sid" column="sid">
+            <generator class="increment"/>
+        </id>
+        <property name="name" column="name"/>
+        <property name="age" column="age" type="int"/>
+        <property name="gender">
+            <column name="gender" sql-type="varchar(50)"/>
+        </property>
+    </class>
+</hibernate-mapping>
