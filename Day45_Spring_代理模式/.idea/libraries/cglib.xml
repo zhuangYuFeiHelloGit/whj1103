@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cglib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../0_Work/1-tools/Java/SSHJar/Spring/cglib/cglib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

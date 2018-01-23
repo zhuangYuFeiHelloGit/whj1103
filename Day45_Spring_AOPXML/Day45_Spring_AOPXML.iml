@@ -28,6 +28,5 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="cglib" level="project" />
   </component>
 </module>

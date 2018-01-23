@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <bean id="transaction"
+          class="com.lanou.aop.Transaction"/>
+    <bean id="userDao"
+          class="com.lanou.aop.UserDaoImpl"/>
+
+    <!--
+        使用aop，需要引入命名空间
+        需要spring-aop这个包
+    -->
+    <aop:config>
+
+        <!--
+            切入点表达式
+                1，确认目标类
+                2，确认目标类中的方法
+        -->
+        <aop:pointcut id="pointcut"
+                      expression="
+                      execution(* com.lanou.aop.UserDaoImpl.*(..))"/>
+
+        <!--
+            指定切面
+
+            ref引用的这个bean，就被作为切面使用
+        -->
+        <aop:aspect ref="transaction">
+
+
+            <aop:before method="begin"
+                        pointcut-ref="pointcut"/>
+            <aop:after method="commit"
+                       pointcut-ref="pointcut"/>
+
+        </aop:aspect>
+    </aop:config>
+
+</beans>
