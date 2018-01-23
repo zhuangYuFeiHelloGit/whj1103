@@ -34,7 +34,6 @@
         所以在此获得student时，就可以输出name了
     -->
     <bean id="student"
-          class="com.lanou.annotation.Student">
-        <property name="name" value="小王"/>
-    </bean>
+          parent="people"
+          class="com.lanou.annotation.Student"/>
 </beans>
