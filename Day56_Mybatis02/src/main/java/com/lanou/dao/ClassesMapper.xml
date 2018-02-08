@@ -1,0 +1,65 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lanou.dao.ClassesMapper">
+    <insert id="insertClasses"
+            parameterType="classes">
+        <!--<selectKey keyProperty="id"-->
+                   <!--resultType="int"-->
+                   <!--order="AFTER">-->
+            <!--SELECT LAST_INSERT_ID()-->
+        <!--</selectKey>-->
+        INSERT INTO Classes VALUES (#{id},#{name},#{gender})
+    </insert>
+    
+    <resultMap id="findByCondition" type="classes">
+        <result column="sex" property="gender"/>
+        <result column="name" property="name"/>
+        <result column="cid" property="id"/>
+    </resultMap>
+
+    <!--创建一个sql片段-->
+    <!--
+        后续的sql语句中如果用到了，
+        直接根据该片段的id导入即可
+    -->
+    <sql id="selectFromClassesCondition">
+        <if test="name != null
+                and name != ''">
+            AND name LIKE '%${name}%'
+        </if>
+        <if test="gender != null
+                and gender != ''">
+            AND sex = #{gender}
+        </if>
+    </sql>
+
+    <select id="findByCondition"
+            parameterType="classes"
+            resultMap="findByCondition">
+
+        SELECT * FROM Classes
+        <where>
+            <include refid="selectFromClassesCondition"/>
+        </where>
+    </select>
+
+
+    <select id="findByIds"
+            parameterType="com.lanou.domain.ClassesQueryParam"
+            resultMap="findByCondition">
+        SELECT * FROM classes
+        <where>
+            <foreach collection="classesIds"
+                     item="id"
+                     open="AND cid IN (" close=")"
+                     separator=",">
+                #{id}
+            </foreach>
+        </where>
+
+
+
+    </select>
+
+</mapper>

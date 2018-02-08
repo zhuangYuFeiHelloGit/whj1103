@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mybatis@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mybatis">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bookstore"/>
+    <schema id="4" parent="1" name="classmanager"/>
+    <schema id="5" parent="1" name="crm"/>
+    <schema id="6" parent="1" name="customers"/>
+    <schema id="7" parent="1" name="day16"/>
+    <schema id="8" parent="1" name="day18"/>
+    <schema id="9" parent="1" name="day19"/>
+    <schema id="10" parent="1" name="day27"/>
+    <schema id="11" parent="1" name="day29"/>
+    <schema id="12" parent="1" name="day3"/>
+    <schema id="13" parent="1" name="demo"/>
+    <schema id="14" parent="1" name="hbue"/>
+    <schema id="15" parent="1" name="hibernate"/>
+    <schema id="16" parent="1" name="hibernate01"/>
+    <schema id="17" parent="1" name="hibernate02"/>
+    <schema id="18" parent="1" name="homework12"/>
+    <schema id="19" parent="1" name="hw_sql"/>
+    <schema id="20" parent="1" name="information_schema"/>
+    <schema id="21" parent="1" name="java1"/>
+    <schema id="22" parent="1" name="jdbc"/>
+    <schema id="23" parent="1" name="jdfull"/>
+    <schema id="24" parent="1" name="mysql"/>
+    <schema id="25" parent="1" name="netctoss"/>
+    <schema id="26" parent="1" name="northwind"/>
+    <schema id="27" parent="1" name="outkey"/>
+    <schema id="28" parent="1" name="page"/>
+    <schema id="29" parent="1" name="pages"/>
+    <schema id="30" parent="1" name="performance_schema"/>
+    <schema id="31" parent="1" name="preh01"/>
+    <schema id="32" parent="1" name="PreH02"/>
+    <schema id="33" parent="1" name="preh03"/>
+    <schema id="34" parent="1" name="proceduredemo"/>
+    <schema id="35" parent="1" name="querymany"/>
+    <schema id="36" parent="1" name="s2"/>
+    <schema id="37" parent="1" name="share"/>
+    <schema id="38" parent="1" name="sph"/>
+    <schema id="39" parent="1" name="SSM"/>
+    <schema id="40" parent="1" name="struts2"/>
+    <schema id="41" parent="1" name="student"/>
+    <schema id="42" parent="1" name="study"/>
+    <schema id="43" parent="1" name="t"/>
+    <schema id="44" parent="1" name="transaction"/>
+    <table id="45" parent="2" name="Items"/>
+    <table id="46" parent="2" name="OrderDetail"/>
+    <table id="47" parent="2" name="Orders"/>
+    <table id="48" parent="2" name="Student"/>
+    <table id="49" parent="2" name="User"/>
+    <table id="50" parent="2" name="classes"/>
+    <column id="51" parent="45" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="52" parent="45" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="53" parent="45" name="Item_id_uindex">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="54" parent="45" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="55" parent="45" name="Item_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>Item_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="56" parent="46" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="57" parent="46" name="orders_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="58" parent="46" name="items_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="59" parent="46" name="OrderDetail_Item_id_fk">
+      <ColNames>items_id</ColNames>
+    </index>
+    <index id="60" parent="46" name="OrderDetail_Orders_id_fk">
+      <ColNames>orders_id</ColNames>
+    </index>
+    <index id="61" parent="46" name="OrderDetail_id_uindex">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="62" parent="46" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="63" parent="46" name="OrderDetail_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>OrderDetail_id_uindex</UnderlyingIndexName>
+    </key>
+    <foreign-key id="64" parent="46" name="OrderDetail_Orders_id_fk">
+      <ColNames>orders_id</ColNames>
+      <RefSchemaName>mybatis</RefSchemaName>
+      <RefTableName>Orders</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="65" parent="46" name="OrderDetail_Item_id_fk">
+      <ColNames>items_id</ColNames>
+      <RefSchemaName>mybatis</RefSchemaName>
+      <RefTableName>items</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="66" parent="47" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="67" parent="47" name="number">
+      <Position>2</Position>
+      <DataType>varchar(11)|0</DataType>
+    </column>
+    <column id="68" parent="47" name="user_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="69" parent="47" name="Orders_User_id_fk">
+      <ColNames>user_id</ColNames>
+    </index>
+    <index id="70" parent="47" name="Orders_id_uindex">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="71" parent="47" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="72" parent="47" name="Orders_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>Orders_id_uindex</UnderlyingIndexName>
+    </key>
+    <foreign-key id="73" parent="47" name="Orders_User_id_fk">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>mybatis</RefSchemaName>
+      <RefTableName>User</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="74" parent="48" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="75" parent="48" name="sname">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="76" parent="48" name="gender">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="77" parent="48" name="age">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="78" parent="48" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="79" parent="49" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="80" parent="49" name="username">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="81" parent="49" name="sex">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="82" parent="49" name="birthday">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="83" parent="49" name="address">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <index id="84" parent="49" name="User_id_uindex">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="85" parent="49" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="86" parent="49" name="User_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>User_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="87" parent="50" name="cid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="88" parent="50" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="89" parent="50" name="sex">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <key id="90" parent="50" name="PRIMARY">
+      <ColNames>cid</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

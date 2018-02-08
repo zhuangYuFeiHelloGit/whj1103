@@ -183,8 +183,15 @@ public class ClazzTest {
 		});
 	}
 
+	@Test
+	public void oneToMany5() throws Exception {
+		HibernateUtil.handle(session -> {
+			Student s1 = session.get(Student.class,5);
+			System.out.println(s1.getClazz().getCname());
+			return null;
+		});
 
-
+	}
 
 	@Test
 	public void validateSecond(){

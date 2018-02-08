@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    by zyf
+    at 2018/2/7  上午9:11
+-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--
+        将数据库的配置文件导入到MyBatis的配置文件中
+        这样在后面的标签中，就可以找到db中的属性值了
+    -->
+    <properties resource="db.properties"/>
+
+    <!--设置全局参数-->
+    <settings>
+        <!-- lazyLoadingEnabled：延迟加载的开关，默认为false -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+
+        <!-- aggressiveLazyLoading默认为true，一旦为true，则上面的懒加载开关将失效 -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+
+        <!-- cacheEnabled：二级缓存的总开关 默认为false -->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias type="com.lanou.domain.Classes"
+                   alias="classes"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${db.driver}"/>
+                <property name="url" value="${db.url}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 注意：与spring集成后，数据源和事务交给spring来管理 -->
+
+    <!-- 加载mapper文件 -->
+    <mappers>
+        <mapper resource="UserMapper.xml"/>
+        <!--<mapper resource="ClassesMapper.xml"/>-->
+
+        <package name="com.lanou.domain"/>
+    </mappers>
+
+</configuration>

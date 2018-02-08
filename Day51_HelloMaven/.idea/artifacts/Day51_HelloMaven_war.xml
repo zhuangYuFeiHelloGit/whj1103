@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Day51_HelloMaven:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="HelloMaven.war">
+      <element id="artifact" artifact-name="Day51_HelloMaven:war exploded" />
+    </root>
+  </artifact>
+</component>
