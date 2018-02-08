@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    by zyf
+    at 2018/2/8  上午9:23
+-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="db.properties"/>
+    <!--设置全局参数-->
+    <settings>
+        <!-- lazyLoadingEnabled：延迟加载的开关，默认为false -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+
+        <!-- aggressiveLazyLoading默认为true，一旦为true，则上面的懒加载开关将失效 -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+
+        <!-- cacheEnabled：二级缓存的总开关 默认为false -->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
+    <!--定义别名-->
+    <typeAliases>
+        <!--批量定义别名-->
+        <!--
+            name：指定需要别名定义的包的名称，它的别名就是类名
+            类名的首字母大小写都可以
+        -->
+        <package name="com.lanou"></package>
+    </typeAliases>
+
+
+    <environments default="default">
+        <environment id="default">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="url" value="${db.url}"/>
+                <property name="driver" value="${db.driver}"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 注意：与spring集成后，数据源和事务交给spring来管理 -->
+
+    <!-- 加载mapper文件 -->
+    <mappers>
+        <package name="com.lanou.dao"/>
+    </mappers>
+</configuration>

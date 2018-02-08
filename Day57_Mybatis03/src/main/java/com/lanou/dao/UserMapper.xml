@@ -1,0 +1,84 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lanou.dao.UserMapper">
+
+
+    <sql id="user_sql">
+        User.id AS uid,User.username
+    </sql>
+
+    <sql id="orders_sql">
+        Orders.id AS oid,Orders.number
+    </sql>
+
+    <sql id="orderDetail_sql">
+        OrderDetail.id AS odid
+    </sql>
+
+    <sql id="items_sql">
+        Items.id AS iid,Items.name
+    </sql>
+
+
+
+    <resultMap id="users" type="com.lanou.domain.User">
+        <id property="id" column="uid"/>
+        <result property="username" column="username"/>
+        <collection property="ordersList"
+                    ofType="com.lanou.domain.Orders">
+            <id property="id" column="oid"/>
+            <result property="number"
+                    column="number"/>
+
+            <collection property="orderDetails"
+                        ofType="com.lanou.domain.OrderDetail">
+                <id property="id" column="odid"/>
+                <association property="items"
+                             javaType="com.lanou.domain.Items">
+                    <id property="id"
+                        column="iid"/>
+                    <result property="name"
+                            column="name"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <select id="findUser" resultMap="users">
+        SELECT
+
+        <include refid="user_sql"/>
+        ,
+        <include refid="orders_sql"/>
+        ,
+        <include refid="orderDetail_sql"/>
+        ,
+        <include refid="items_sql"/>
+
+        FROM
+        USER ,Orders,OrderDetail,Items
+        WHERE
+        USER.id = Orders.user_id
+        AND
+        Orders.id=OrderDetail.orders_id
+        AND
+        OrderDetail.items_id=Items.id
+
+
+    </select>
+
+
+    <insert id="insertUser"
+            parameterType="com.lanou.domain.User">
+        <selectKey keyProperty="id"
+                   resultType="java.lang.Integer"
+                   order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO USER (id,username)
+        VALUES (#{id},#{username})
+
+    </insert>
+
+</mapper>
